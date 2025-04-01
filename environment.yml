@@ -1,0 +1,13 @@
+name: dotstim-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.13.2
+  - numpy
+  - opencv
+  - matplotlib
+  - pytorch
+  - pip
+  - pip:
+      - segment-anything
