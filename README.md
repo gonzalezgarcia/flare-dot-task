@@ -27,7 +27,15 @@ Download the SAM model checkpoint from the official repo and place it in the `mo
 
 - [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
 - File: `sam_vit_h_4b8939.pth`
-- Folder: `models/`
+
+Or use this direct link:
+```bash
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -P models/
+```
+
+- Add it to folder: `models/`
+
+
 
 ### 📷 Original Images
 - Download the original images from [THINGS database](https://osf.io/jum2f/files/osfstorage/670d66e48092b2004c2ecbfe).
@@ -43,10 +51,7 @@ python batch_dot_generator.py
 python batch_dot_generator.py --force
 ```
 
-Or use this direct link:
-```bash
-wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -P models/
-```
+
 
 ## 📋 Output
 - Stimulus images with red dots
