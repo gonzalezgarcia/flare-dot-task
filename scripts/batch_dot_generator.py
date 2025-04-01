@@ -146,6 +146,16 @@ for image_file in image_files:
     mask_path = os.path.join(output_subdir, f"{base_name}_mask.png")
     cv2.imwrite(mask_path, combined_mask)
 
+    # Create transparent RGBA masked object
+    bgr = original_img.copy()
+    alpha = (combined_mask > 0).astype(np.uint8) * 255  # 255 for object, 0 for background
+
+    # Stack BGR + Alpha to RGBA
+    rgba = cv2.merge((*cv2.split(bgr), alpha))
+
+    object_path = os.path.join(output_subdir, f"{base_name}_object.png")
+    cv2.imwrite(object_path, rgba)
+
     center = get_center(rgb_img)
     radius = int(min(height, width) * circle_radius_ratio)
     circle_positions = generate_circle_positions(center, radius, sampling_points)

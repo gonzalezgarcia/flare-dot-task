@@ -1,0 +1,216 @@
+{
+  "base_name": "oar",
+  "click_points": [
+    [
+      656,
+      576
+    ],
+    [
+      342,
+      1303
+    ],
+    [
+      1028,
+      1391
+    ],
+    [
+      1261,
+      589
+    ]
+  ],
+  "circle_radius": 501,
+  "dots": [
+    {
+      "image": "oar_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1301,
+      "y": 800
+    },
+    {
+      "image": "oar_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1270,
+      "y": 971
+    },
+    {
+      "image": "oar_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1183,
+      "y": 1122
+    },
+    {
+      "image": "oar_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1050,
+      "y": 1233
+    },
+    {
+      "image": "oar_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 366,
+      "y": 1050
+    },
+    {
+      "image": "oar_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 713,
+      "y": 306
+    },
+    {
+      "image": "oar_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 971,
+      "y": 1270
+    },
+    {
+      "image": "oar_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 800,
+      "y": 1301
+    },
+    {
+      "image": "oar_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 628,
+      "y": 1270
+    },
+    {
+      "image": "oar_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 477,
+      "y": 1183
+    },
+    {
+      "image": "oar_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 306,
+      "y": 886
+    },
+    {
+      "image": "oar_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 306,
+      "y": 713
+    },
+    {
+      "image": "oar_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1293,
+      "y": 886
+    },
+    {
+      "image": "oar_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1233,
+      "y": 1050
+    },
+    {
+      "image": "oar_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 1122,
+      "y": 1183
+    },
+    {
+      "image": "oar_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 416,
+      "y": 1122
+    },
+    {
+      "image": "oar_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 628,
+      "y": 329
+    },
+    {
+      "image": "oar_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 799,
+      "y": 299
+    },
+    {
+      "image": "oar_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 886,
+      "y": 1293
+    },
+    {
+      "image": "oar_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 713,
+      "y": 1293
+    },
+    {
+      "image": "oar_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 549,
+      "y": 1233
+    },
+    {
+      "image": "oar_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 329,
+      "y": 971
+    },
+    {
+      "image": "oar_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 299,
+      "y": 800
+    },
+    {
+      "image": "oar_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 329,
+      "y": 628
+    }
+  ]
+}

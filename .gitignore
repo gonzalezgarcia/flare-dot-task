@@ -2,7 +2,10 @@ __pycache__/
 .DS_Store
 *.pth
 *.ipynb_checkpoints
-stimuli/output_dots/ 
+stimuli/gray/*.jpg
+stimuli/mooney/*jpg
+stimuli/original/*jpg
+
 .env
 .vscode/
 *.pyc

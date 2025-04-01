@@ -1,0 +1,244 @@
+{
+  "base_name": "horse",
+  "click_points": [
+    [
+      243,
+      1012
+    ],
+    [
+      415,
+      677
+    ],
+    [
+      321,
+      1202
+    ],
+    [
+      537,
+      1207
+    ],
+    [
+      612,
+      1233
+    ],
+    [
+      742,
+      1105
+    ],
+    [
+      607,
+      705
+    ],
+    [
+      708,
+      363
+    ],
+    [
+      960,
+      350
+    ],
+    [
+      1030,
+      459
+    ],
+    [
+      368,
+      472
+    ]
+  ],
+  "circle_radius": 490,
+  "dots": [
+    {
+      "image": "horse_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 714,
+      "y": 1282
+    },
+    {
+      "image": "horse_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 555,
+      "y": 1224
+    },
+    {
+      "image": "horse_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 339,
+      "y": 967
+    },
+    {
+      "image": "horse_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 310,
+      "y": 800
+    },
+    {
+      "image": "horse_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 339,
+      "y": 632
+    },
+    {
+      "image": "horse_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 424,
+      "y": 485
+    },
+    {
+      "image": "horse_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1290,
+      "y": 800
+    },
+    {
+      "image": "horse_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1260,
+      "y": 967
+    },
+    {
+      "image": "horse_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1175,
+      "y": 1114
+    },
+    {
+      "image": "horse_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1045,
+      "y": 1224
+    },
+    {
+      "image": "horse_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 885,
+      "y": 1282
+    },
+    {
+      "image": "horse_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 424,
+      "y": 1114
+    },
+    {
+      "image": "horse_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 632,
+      "y": 1260
+    },
+    {
+      "image": "horse_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 485,
+      "y": 1175
+    },
+    {
+      "image": "horse_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 317,
+      "y": 885
+    },
+    {
+      "image": "horse_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 317,
+      "y": 714
+    },
+    {
+      "image": "horse_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 375,
+      "y": 555
+    },
+    {
+      "image": "horse_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 485,
+      "y": 424
+    },
+    {
+      "image": "horse_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1282,
+      "y": 885
+    },
+    {
+      "image": "horse_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1224,
+      "y": 1045
+    },
+    {
+      "image": "horse_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 1114,
+      "y": 1175
+    },
+    {
+      "image": "horse_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 967,
+      "y": 1260
+    },
+    {
+      "image": "horse_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 800,
+      "y": 1290
+    },
+    {
+      "image": "horse_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 375,
+      "y": 1045
+    }
+  ]
+}

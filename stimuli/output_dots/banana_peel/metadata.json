@@ -1,0 +1,220 @@
+{
+  "base_name": "banana_peel",
+  "click_points": [
+    [
+      274,
+      786
+    ],
+    [
+      833,
+      799
+    ],
+    [
+      589,
+      474
+    ],
+    [
+      1038,
+      690
+    ],
+    [
+      1412,
+      586
+    ]
+  ],
+  "circle_radius": 648,
+  "dots": [
+    {
+      "image": "banana_peel_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1448,
+      "y": 800
+    },
+    {
+      "image": "banana_peel_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 161,
+      "y": 912
+    },
+    {
+      "image": "banana_peel_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 191,
+      "y": 578
+    },
+    {
+      "image": "banana_peel_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 303,
+      "y": 383
+    },
+    {
+      "image": "banana_peel_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 1296,
+      "y": 383
+    },
+    {
+      "image": "banana_peel_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 1408,
+      "y": 578
+    },
+    {
+      "image": "banana_peel_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1438,
+      "y": 912
+    },
+    {
+      "image": "banana_peel_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1216,
+      "y": 1296
+    },
+    {
+      "image": "banana_peel_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 800,
+      "y": 1448
+    },
+    {
+      "image": "banana_peel_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 383,
+      "y": 1296
+    },
+    {
+      "image": "banana_peel_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 383,
+      "y": 303
+    },
+    {
+      "image": "banana_peel_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 799,
+      "y": 152
+    },
+    {
+      "image": "banana_peel_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 191,
+      "y": 1021
+    },
+    {
+      "image": "banana_peel_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 152,
+      "y": 800
+    },
+    {
+      "image": "banana_peel_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 238,
+      "y": 476
+    },
+    {
+      "image": "banana_peel_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 1216,
+      "y": 303
+    },
+    {
+      "image": "banana_peel_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 1361,
+      "y": 475
+    },
+    {
+      "image": "banana_peel_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 1438,
+      "y": 687
+    },
+    {
+      "image": "banana_peel_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1361,
+      "y": 1124
+    },
+    {
+      "image": "banana_peel_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1021,
+      "y": 1408
+    },
+    {
+      "image": "banana_peel_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 578,
+      "y": 1408
+    },
+    {
+      "image": "banana_peel_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 238,
+      "y": 1124
+    },
+    {
+      "image": "banana_peel_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 578,
+      "y": 191
+    },
+    {
+      "image": "banana_peel_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 1021,
+      "y": 191
+    }
+  ]
+}

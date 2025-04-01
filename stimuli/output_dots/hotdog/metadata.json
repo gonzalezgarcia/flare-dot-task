@@ -1,0 +1,256 @@
+{
+  "base_name": "hotdog",
+  "click_points": [
+    [
+      365,
+      1269
+    ],
+    [
+      241,
+      978
+    ],
+    [
+      508,
+      674
+    ],
+    [
+      659,
+      318
+    ],
+    [
+      1080,
+      303
+    ],
+    [
+      867,
+      404
+    ],
+    [
+      921,
+      578
+    ],
+    [
+      1046,
+      716
+    ],
+    [
+      924,
+      1168
+    ],
+    [
+      877,
+      1274
+    ],
+    [
+      1277,
+      913
+    ],
+    [
+      1386,
+      526
+    ],
+    [
+      1157,
+      667
+    ],
+    [
+      604,
+      867
+    ]
+  ],
+  "circle_radius": 650,
+  "dots": [
+    {
+      "image": "hotdog_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 912,
+      "y": 1440
+    },
+    {
+      "image": "hotdog_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 687,
+      "y": 1440
+    },
+    {
+      "image": "hotdog_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 302,
+      "y": 1217
+    },
+    {
+      "image": "hotdog_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 189,
+      "y": 1022
+    },
+    {
+      "image": "hotdog_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 150,
+      "y": 800
+    },
+    {
+      "image": "hotdog_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 1362,
+      "y": 474
+    },
+    {
+      "image": "hotdog_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1450,
+      "y": 800
+    },
+    {
+      "image": "hotdog_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1410,
+      "y": 1022
+    },
+    {
+      "image": "hotdog_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1297,
+      "y": 1217
+    },
+    {
+      "image": "hotdog_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1125,
+      "y": 1362
+    },
+    {
+      "image": "hotdog_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 577,
+      "y": 1410
+    },
+    {
+      "image": "hotdog_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 189,
+      "y": 577
+    },
+    {
+      "image": "hotdog_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 800,
+      "y": 1450
+    },
+    {
+      "image": "hotdog_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 382,
+      "y": 1297
+    },
+    {
+      "image": "hotdog_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 237,
+      "y": 1125
+    },
+    {
+      "image": "hotdog_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 159,
+      "y": 912
+    },
+    {
+      "image": "hotdog_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 159,
+      "y": 687
+    },
+    {
+      "image": "hotdog_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 1410,
+      "y": 577
+    },
+    {
+      "image": "hotdog_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1440,
+      "y": 912
+    },
+    {
+      "image": "hotdog_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1362,
+      "y": 1125
+    },
+    {
+      "image": "hotdog_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 1217,
+      "y": 1297
+    },
+    {
+      "image": "hotdog_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 1022,
+      "y": 1410
+    },
+    {
+      "image": "hotdog_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 475,
+      "y": 1362
+    },
+    {
+      "image": "hotdog_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 237,
+      "y": 475
+    }
+  ]
+}

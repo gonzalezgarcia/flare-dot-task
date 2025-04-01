@@ -1,0 +1,244 @@
+{
+  "base_name": "motorcycle",
+  "click_points": [
+    [
+      391,
+      1313
+    ],
+    [
+      1051,
+      1409
+    ],
+    [
+      1009,
+      1152
+    ],
+    [
+      378,
+      1113
+    ],
+    [
+      490,
+      778
+    ],
+    [
+      794,
+      612
+    ],
+    [
+      643,
+      856
+    ],
+    [
+      867,
+      344
+    ],
+    [
+      791,
+      181
+    ],
+    [
+      1111,
+      589
+    ],
+    [
+      724,
+      272
+    ]
+  ],
+  "circle_radius": 570,
+  "dots": [
+    {
+      "image": "motorcycle_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1335,
+      "y": 994
+    },
+    {
+      "image": "motorcycle_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1236,
+      "y": 1166
+    },
+    {
+      "image": "motorcycle_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1085,
+      "y": 1293
+    },
+    {
+      "image": "motorcycle_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 898,
+      "y": 1361
+    },
+    {
+      "image": "motorcycle_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 433,
+      "y": 1236
+    },
+    {
+      "image": "motorcycle_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 306,
+      "y": 1085
+    },
+    {
+      "image": "motorcycle_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1370,
+      "y": 800
+    },
+    {
+      "image": "motorcycle_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 515,
+      "y": 1293
+    },
+    {
+      "image": "motorcycle_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 238,
+      "y": 701
+    },
+    {
+      "image": "motorcycle_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 433,
+      "y": 363
+    },
+    {
+      "image": "motorcycle_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 898,
+      "y": 238
+    },
+    {
+      "image": "motorcycle_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 1236,
+      "y": 433
+    },
+    {
+      "image": "motorcycle_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1293,
+      "y": 1085
+    },
+    {
+      "image": "motorcycle_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1166,
+      "y": 1236
+    },
+    {
+      "image": "motorcycle_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 994,
+      "y": 1335
+    },
+    {
+      "image": "motorcycle_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 800,
+      "y": 1370
+    },
+    {
+      "image": "motorcycle_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 363,
+      "y": 1166
+    },
+    {
+      "image": "motorcycle_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 701,
+      "y": 238
+    },
+    {
+      "image": "motorcycle_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 701,
+      "y": 1361
+    },
+    {
+      "image": "motorcycle_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 238,
+      "y": 898
+    },
+    {
+      "image": "motorcycle_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 306,
+      "y": 515
+    },
+    {
+      "image": "motorcycle_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 605,
+      "y": 264
+    },
+    {
+      "image": "motorcycle_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 1085,
+      "y": 306
+    },
+    {
+      "image": "motorcycle_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 1335,
+      "y": 605
+    }
+  ]
+}

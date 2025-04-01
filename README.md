@@ -20,19 +20,28 @@ stimuli/
 models/
 └── sam_vit_h_4b8939.pth  # Segment Anything model
 ```
-
-## ▶️ Usage
-```bash
-python batch_dot_generator.py
-python batch_dot_generator.py --force
-```
-## 🔗 Model Weights
+## Before running, download the following
+### 🔗 Model Weights
 
 Download the SAM model checkpoint from the official repo and place it in the `models/` folder:
 
 - [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
 - File: `sam_vit_h_4b8939.pth`
 - Folder: `models/`
+
+### 📷 Original Images
+- Download the original images from [THINGS database](https://osf.io/jum2f/files/osfstorage/670d66e48092b2004c2ecbfe).
+- Download [THINGS-Mooney](https://github.com/wobc/things-mooney)
+- Place your original images in the `stimuli/original/` folder.
+- Place the Mooney images in the `stimuli/mooney/` folder.
+- Place the grayscale images in the `stimuli/gray/` folder.
+
+
+## ▶️ Usage
+```bash
+python batch_dot_generator.py
+python batch_dot_generator.py --force
+```
 
 Or use this direct link:
 ```bash

@@ -1,0 +1,224 @@
+{
+  "base_name": "minivan",
+  "click_points": [
+    [
+      202,
+      1015
+    ],
+    [
+      347,
+      843
+    ],
+    [
+      731,
+      503
+    ],
+    [
+      1215,
+      900
+    ],
+    [
+      804,
+      1041
+    ],
+    [
+      1383,
+      1121
+    ]
+  ],
+  "circle_radius": 469,
+  "dots": [
+    {
+      "image": "minivan_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1269,
+      "y": 800
+    },
+    {
+      "image": "minivan_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1240,
+      "y": 960
+    },
+    {
+      "image": "minivan_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1159,
+      "y": 1101
+    },
+    {
+      "image": "minivan_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 359,
+      "y": 960
+    },
+    {
+      "image": "minivan_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 331,
+      "y": 800
+    },
+    {
+      "image": "minivan_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 359,
+      "y": 639
+    },
+    {
+      "image": "minivan_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1101,
+      "y": 1159
+    },
+    {
+      "image": "minivan_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 960,
+      "y": 1240
+    },
+    {
+      "image": "minivan_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 800,
+      "y": 1269
+    },
+    {
+      "image": "minivan_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 639,
+      "y": 1240
+    },
+    {
+      "image": "minivan_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 498,
+      "y": 1159
+    },
+    {
+      "image": "minivan_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 565,
+      "y": 393
+    },
+    {
+      "image": "minivan_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1261,
+      "y": 881
+    },
+    {
+      "image": "minivan_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1206,
+      "y": 1034
+    },
+    {
+      "image": "minivan_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 393,
+      "y": 1034
+    },
+    {
+      "image": "minivan_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 338,
+      "y": 881
+    },
+    {
+      "image": "minivan_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 338,
+      "y": 718
+    },
+    {
+      "image": "minivan_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 393,
+      "y": 565
+    },
+    {
+      "image": "minivan_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1034,
+      "y": 1206
+    },
+    {
+      "image": "minivan_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 881,
+      "y": 1261
+    },
+    {
+      "image": "minivan_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 718,
+      "y": 1261
+    },
+    {
+      "image": "minivan_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 565,
+      "y": 1206
+    },
+    {
+      "image": "minivan_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 440,
+      "y": 1101
+    },
+    {
+      "image": "minivan_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 639,
+      "y": 359
+    }
+  ]
+}
