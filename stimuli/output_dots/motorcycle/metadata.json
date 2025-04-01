@@ -2,106 +2,106 @@
   "base_name": "motorcycle",
   "click_points": [
     [
-      391,
-      1313
+      422,
+      1280
     ],
     [
-      1051,
-      1409
+      412,
+      1118
+    ],
+    [
+      459,
+      874
+    ],
+    [
+      817,
+      643
+    ],
+    [
+      737,
+      277
+    ],
+    [
+      783,
+      194
+    ],
+    [
+      1087,
+      576
+    ],
+    [
+      820,
+      609
     ],
     [
       1009,
-      1152
+      1137
     ],
     [
-      378,
-      1113
+      765,
+      1124
     ],
     [
-      490,
-      778
-    ],
-    [
-      794,
-      612
-    ],
-    [
-      643,
-      856
-    ],
-    [
-      867,
-      344
-    ],
-    [
-      791,
-      181
-    ],
-    [
-      1111,
-      589
-    ],
-    [
-      724,
-      272
+      1293,
+      1207
     ]
   ],
-  "circle_radius": 570,
+  "circle_radius": 490,
   "dots": [
     {
       "image": "motorcycle_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1335,
-      "y": 994
+      "x": 1255,
+      "y": 980
     },
     {
       "image": "motorcycle_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1236,
-      "y": 1166
+      "x": 1196,
+      "y": 1088
     },
     {
       "image": "motorcycle_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1085,
-      "y": 1293
+      "x": 1112,
+      "y": 1177
     },
     {
       "image": "motorcycle_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 898,
-      "y": 1361
+      "x": 1008,
+      "y": 1243
     },
     {
       "image": "motorcycle_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 433,
-      "y": 1236
+      "x": 891,
+      "y": 1281
     },
     {
       "image": "motorcycle_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 306,
-      "y": 1085
+      "x": 487,
+      "y": 1177
     },
     {
       "image": "motorcycle_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1370,
+      "x": 1290,
       "y": 800
     },
     {
@@ -109,136 +109,136 @@
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 515,
-      "y": 1293
+      "x": 325,
+      "y": 678
     },
     {
       "image": "motorcycle_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 238,
-      "y": 701
+      "x": 370,
+      "y": 563
     },
     {
       "image": "motorcycle_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 433,
-      "y": 363
+      "x": 442,
+      "y": 464
     },
     {
       "image": "motorcycle_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 898,
-      "y": 238
+      "x": 537,
+      "y": 386
     },
     {
       "image": "motorcycle_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1236,
-      "y": 433
+      "x": 648,
+      "y": 333
     },
     {
       "image": "motorcycle_gray_dot_on1.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 1,
-      "x": 1293,
-      "y": 1085
+      "x": 1229,
+      "y": 1036
     },
     {
       "image": "motorcycle_gray_dot_on2.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 2,
-      "x": 1166,
-      "y": 1236
+      "x": 1157,
+      "y": 1135
     },
     {
       "image": "motorcycle_gray_dot_on3.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 3,
-      "x": 994,
-      "y": 1335
+      "x": 1062,
+      "y": 1213
     },
     {
       "image": "motorcycle_gray_dot_on4.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 4,
-      "x": 800,
-      "y": 1370
+      "x": 951,
+      "y": 1266
     },
     {
       "image": "motorcycle_gray_dot_on5.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 5,
-      "x": 363,
-      "y": 1166
+      "x": 830,
+      "y": 1289
     },
     {
       "image": "motorcycle_gray_dot_on6.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 6,
-      "x": 701,
-      "y": 238
+      "x": 442,
+      "y": 1135
     },
     {
       "image": "motorcycle_gray_dot_off1.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 1,
-      "x": 701,
-      "y": 1361
+      "x": 313,
+      "y": 738
     },
     {
       "image": "motorcycle_gray_dot_off2.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 2,
-      "x": 238,
-      "y": 898
+      "x": 344,
+      "y": 619
     },
     {
       "image": "motorcycle_gray_dot_off3.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 3,
-      "x": 306,
-      "y": 515
+      "x": 403,
+      "y": 511
     },
     {
       "image": "motorcycle_gray_dot_off4.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 4,
-      "x": 605,
-      "y": 264
+      "x": 487,
+      "y": 422
     },
     {
       "image": "motorcycle_gray_dot_off5.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 5,
-      "x": 1085,
-      "y": 306
+      "x": 591,
+      "y": 356
     },
     {
       "image": "motorcycle_gray_dot_off6.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 6,
-      "x": 1335,
-      "y": 605
+      "x": 1062,
+      "y": 386
     }
   ]
 }

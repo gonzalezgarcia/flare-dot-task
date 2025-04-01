@@ -2,106 +2,122 @@
   "base_name": "horse",
   "click_points": [
     [
-      243,
-      1012
+      344,
+      1412
     ],
     [
-      415,
+      635,
+      1454
+    ],
+    [
+      734,
+      1420
+    ],
+    [
+      521,
+      1298
+    ],
+    [
+      318,
+      934
+    ],
+    [
+      251,
+      996
+    ],
+    [
+      272,
+      544
+    ],
+    [
+      737,
+      365
+    ],
+    [
+      687,
+      256
+    ],
+    [
+      999,
+      402
+    ],
+    [
+      1041,
+      477
+    ],
+    [
+      822,
       677
     ],
     [
-      321,
-      1202
+      656,
+      721
     ],
     [
-      537,
-      1207
+      1100,
+      576
     ],
     [
-      612,
-      1233
-    ],
-    [
-      742,
-      1105
-    ],
-    [
-      607,
-      705
-    ],
-    [
-      708,
-      363
-    ],
-    [
-      960,
-      350
-    ],
-    [
-      1030,
-      459
-    ],
-    [
-      368,
-      472
+      986,
+      518
     ]
   ],
-  "circle_radius": 490,
+  "circle_radius": 554,
   "dots": [
     {
       "image": "horse_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 714,
-      "y": 1282
+      "x": 314,
+      "y": 1066
     },
     {
       "image": "horse_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 555,
-      "y": 1224
+      "x": 263,
+      "y": 937
     },
     {
       "image": "horse_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 339,
-      "y": 967
+      "x": 263,
+      "y": 662
     },
     {
       "image": "horse_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 310,
-      "y": 800
+      "x": 314,
+      "y": 533
     },
     {
       "image": "horse_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 339,
-      "y": 632
+      "x": 396,
+      "y": 420
     },
     {
       "image": "horse_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 424,
-      "y": 485
+      "x": 765,
+      "y": 247
     },
     {
       "image": "horse_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1290,
+      "x": 1354,
       "y": 800
     },
     {
@@ -109,136 +125,136 @@
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1260,
-      "y": 967
+      "x": 1336,
+      "y": 937
     },
     {
       "image": "horse_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1175,
-      "y": 1114
+      "x": 1285,
+      "y": 1066
     },
     {
       "image": "horse_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1045,
-      "y": 1224
+      "x": 1203,
+      "y": 1179
     },
     {
       "image": "horse_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 885,
-      "y": 1282
+      "x": 1096,
+      "y": 1267
     },
     {
       "image": "horse_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 424,
-      "y": 1114
+      "x": 971,
+      "y": 1326
     },
     {
       "image": "horse_gray_dot_on1.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 1,
-      "x": 632,
-      "y": 1260
+      "x": 284,
+      "y": 1003
     },
     {
       "image": "horse_gray_dot_on2.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 2,
-      "x": 485,
-      "y": 1175
+      "x": 250,
+      "y": 730
     },
     {
       "image": "horse_gray_dot_on3.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 3,
-      "x": 317,
-      "y": 885
+      "x": 284,
+      "y": 596
     },
     {
       "image": "horse_gray_dot_on4.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 4,
-      "x": 317,
-      "y": 714
+      "x": 351,
+      "y": 474
     },
     {
       "image": "horse_gray_dot_on5.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 5,
-      "x": 375,
-      "y": 555
+      "x": 696,
+      "y": 255
     },
     {
       "image": "horse_gray_dot_on6.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 6,
-      "x": 485,
-      "y": 424
+      "x": 971,
+      "y": 273
     },
     {
       "image": "horse_gray_dot_off1.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 1,
-      "x": 1282,
-      "y": 885
+      "x": 1349,
+      "y": 869
     },
     {
       "image": "horse_gray_dot_off2.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 2,
-      "x": 1224,
-      "y": 1045
+      "x": 1315,
+      "y": 1003
     },
     {
       "image": "horse_gray_dot_off3.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 3,
-      "x": 1114,
-      "y": 1175
+      "x": 1248,
+      "y": 1125
     },
     {
       "image": "horse_gray_dot_off4.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 4,
-      "x": 967,
-      "y": 1260
+      "x": 1153,
+      "y": 1226
     },
     {
       "image": "horse_gray_dot_off5.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 5,
-      "x": 800,
-      "y": 1290
+      "x": 1035,
+      "y": 1301
     },
     {
       "image": "horse_gray_dot_off6.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 6,
-      "x": 375,
-      "y": 1045
+      "x": 903,
+      "y": 1344
     }
   ]
 }

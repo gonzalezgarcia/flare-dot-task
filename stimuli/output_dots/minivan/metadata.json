@@ -2,39 +2,47 @@
   "base_name": "minivan",
   "click_points": [
     [
-      202,
-      1015
+      220,
+      1038
     ],
     [
-      347,
-      843
+      303,
+      815
     ],
     [
-      731,
-      503
+      451,
+      607
     ],
     [
-      1215,
-      900
+      986,
+      682
     ],
     [
-      804,
-      1041
+      791,
+      1025
     ],
     [
-      1383,
-      1121
+      1098,
+      908
+    ],
+    [
+      1321,
+      804
+    ],
+    [
+      1381,
+      1072
     ]
   ],
-  "circle_radius": 469,
+  "circle_radius": 474,
   "dots": [
     {
       "image": "minivan_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1269,
-      "y": 800
+      "x": 1270,
+      "y": 859
     },
     {
       "image": "minivan_mooney_dot_on2.jpg",
@@ -42,183 +50,183 @@
       "type": "mooney",
       "dot_number": 2,
       "x": 1240,
-      "y": 960
+      "y": 974
     },
     {
       "image": "minivan_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1159,
-      "y": 1101
+      "x": 1183,
+      "y": 1078
     },
     {
       "image": "minivan_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 359,
-      "y": 960
+      "x": 340,
+      "y": 917
     },
     {
       "image": "minivan_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 331,
-      "y": 800
+      "x": 326,
+      "y": 799
     },
     {
       "image": "minivan_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 359,
-      "y": 639
+      "x": 340,
+      "y": 682
     },
     {
       "image": "minivan_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1101,
-      "y": 1159
+      "x": 1102,
+      "y": 1165
     },
     {
       "image": "minivan_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 960,
-      "y": 1240
+      "x": 888,
+      "y": 1265
     },
     {
       "image": "minivan_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 800,
-      "y": 1269
+      "x": 653,
+      "y": 1250
     },
     {
       "image": "minivan_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 639,
-      "y": 1240
+      "x": 454,
+      "y": 1124
     },
     {
       "image": "minivan_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 498,
-      "y": 1159
+      "x": 829,
+      "y": 326
     },
     {
       "image": "minivan_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 565,
-      "y": 393
+      "x": 1053,
+      "y": 399
     },
     {
       "image": "minivan_gray_dot_on1.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 1,
-      "x": 1261,
-      "y": 881
+      "x": 1259,
+      "y": 917
     },
     {
       "image": "minivan_gray_dot_on2.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 2,
-      "x": 1206,
-      "y": 1034
+      "x": 1215,
+      "y": 1028
     },
     {
       "image": "minivan_gray_dot_on3.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 3,
-      "x": 393,
-      "y": 1034
+      "x": 359,
+      "y": 974
     },
     {
       "image": "minivan_gray_dot_on4.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 4,
-      "x": 338,
-      "y": 881
+      "x": 329,
+      "y": 859
     },
     {
       "image": "minivan_gray_dot_on5.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 5,
-      "x": 338,
-      "y": 718
+      "x": 329,
+      "y": 740
     },
     {
       "image": "minivan_gray_dot_on6.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 6,
-      "x": 393,
-      "y": 565
+      "x": 359,
+      "y": 625
     },
     {
       "image": "minivan_gray_dot_off1.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 1,
-      "x": 1034,
-      "y": 1206
+      "x": 1001,
+      "y": 1228
     },
     {
       "image": "minivan_gray_dot_off2.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 2,
-      "x": 881,
-      "y": 1261
+      "x": 770,
+      "y": 1273
     },
     {
       "image": "minivan_gray_dot_off3.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 3,
-      "x": 718,
-      "y": 1261
+      "x": 546,
+      "y": 1200
     },
     {
       "image": "minivan_gray_dot_off4.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 4,
-      "x": 565,
-      "y": 1206
+      "x": 711,
+      "y": 334
     },
     {
       "image": "minivan_gray_dot_off5.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 5,
-      "x": 440,
-      "y": 1101
+      "x": 946,
+      "y": 349
     },
     {
       "image": "minivan_gray_dot_off6.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 6,
-      "x": 639,
-      "y": 359
+      "x": 1145,
+      "y": 475
     }
   ]
 }

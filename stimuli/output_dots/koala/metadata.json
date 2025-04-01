@@ -2,130 +2,114 @@
   "base_name": "koala",
   "click_points": [
     [
-      695,
-      576
+      656,
+      729
     ],
     [
-      947,
-      1004
+      983,
+      939
     ],
     [
-      1015,
-      1251
+      1293,
+      539
     ],
     [
-      1129,
-      1160
+      1472,
+      274
     ],
     [
-      1451,
-      994
+      716,
+      513
     ],
     [
-      1139,
-      877
+      1443,
+      991
     ],
     [
-      1007,
-      726
+      1144,
+      1194
     ],
     [
-      1300,
-      573
+      1046,
+      1264
     ],
     [
-      1487,
-      368
-    ],
-    [
-      1464,
-      269
-    ],
-    [
-      1259,
-      487
-    ],
-    [
-      989,
-      557
-    ],
-    [
-      950,
-      376
+      986,
+      1287
     ]
   ],
-  "circle_radius": 400,
+  "circle_radius": 376,
   "dots": [
     {
       "image": "koala_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1193,
-      "y": 869
+      "x": 1164,
+      "y": 893
     },
     {
       "image": "koala_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1146,
-      "y": 1000
+      "x": 1104,
+      "y": 1021
     },
     {
       "image": "koala_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1057,
-      "y": 1106
+      "x": 1039,
+      "y": 1089
     },
     {
       "image": "koala_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 542,
-      "y": 493
+      "x": 560,
+      "y": 510
     },
     {
       "image": "koala_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 799,
-      "y": 400
+      "x": 823,
+      "y": 424
     },
     {
       "image": "koala_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 936,
-      "y": 424
+      "x": 916,
+      "y": 442
     },
     {
       "image": "koala_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1200,
-      "y": 800
+      "x": 870,
+      "y": 1169
     },
     {
       "image": "koala_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 730,
-      "y": 1193
+      "x": 683,
+      "y": 1157
     },
     {
       "image": "koala_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 493,
+      "x": 525,
       "y": 1057
     },
     {
@@ -133,39 +117,39 @@
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 400,
-      "y": 800
+      "x": 435,
+      "y": 893
     },
     {
       "image": "koala_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 493,
-      "y": 542
+      "x": 435,
+      "y": 706
     },
     {
       "image": "koala_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1106,
-      "y": 542
+      "x": 1104,
+      "y": 578
     },
     {
       "image": "koala_gray_dot_on1.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 1,
-      "x": 1175,
-      "y": 936
+      "x": 1129,
+      "y": 981
     },
     {
       "image": "koala_gray_dot_on2.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 2,
-      "x": 1106,
+      "x": 1074,
       "y": 1057
     },
     {
@@ -173,56 +157,56 @@
       "label": "on",
       "type": "gray",
       "dot_number": 3,
-      "x": 1000,
-      "y": 1146
+      "x": 1001,
+      "y": 1117
     },
     {
       "image": "koala_gray_dot_on4.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 4,
-      "x": 599,
-      "y": 453
+      "x": 598,
+      "y": 482
     },
     {
       "image": "koala_gray_dot_on5.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 5,
-      "x": 869,
-      "y": 406
+      "x": 870,
+      "y": 430
     },
     {
       "image": "koala_gray_dot_on6.jpg",
       "label": "on",
       "type": "gray",
       "dot_number": 6,
-      "x": 1000,
-      "y": 453
+      "x": 960,
+      "y": 459
     },
     {
       "image": "koala_gray_dot_off1.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 1,
-      "x": 869,
-      "y": 1193
+      "x": 776,
+      "y": 1175
     },
     {
       "image": "koala_gray_dot_off2.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 2,
-      "x": 600,
-      "y": 1146
+      "x": 598,
+      "y": 1117
     },
     {
       "image": "koala_gray_dot_off3.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 3,
-      "x": 424,
-      "y": 936
+      "x": 470,
+      "y": 981
     },
     {
       "image": "koala_gray_dot_off4.jpg",
@@ -230,23 +214,23 @@
       "type": "gray",
       "dot_number": 4,
       "x": 424,
-      "y": 663
+      "y": 799
     },
     {
       "image": "koala_gray_dot_off5.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 5,
-      "x": 730,
-      "y": 406
+      "x": 470,
+      "y": 618
     },
     {
       "image": "koala_gray_dot_off6.jpg",
       "label": "off",
       "type": "gray",
       "dot_number": 6,
-      "x": 1175,
-      "y": 663
+      "x": 1149,
+      "y": 661
     }
   ]
 }

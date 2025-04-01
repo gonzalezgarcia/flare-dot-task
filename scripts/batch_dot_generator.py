@@ -20,8 +20,8 @@ model_type = "vit_h"
 
 dot_color = (0, 0, 255)
 dot_radius = 15
-num_dots = 6  # means 6 for mooney, 3 for gray
-sampling_points = 36
+num_dots = 6  # means 6 for mooney, 6 for gray
+sampling_points = 50
 circle_radius_ratio = 0.5
 
 os.makedirs(output_dir, exist_ok=True)
@@ -51,6 +51,23 @@ def pick_evenly_spaced(points, num):
         raise ValueError("Not enough valid points.")
     step = len(points) // num
     return [points[i * step] for i in range(num)]
+
+def filter_near_edges(points, image_shape, margin):
+    h, w = image_shape[:2]
+    return [(x, y) for x, y in points if margin <= x < (w - margin) and margin <= y < (h - margin)]
+
+def filter_near_mask_edges(points, mask, min_distance):
+    dist_transform = cv2.distanceTransform((mask > 127).astype(np.uint8), cv2.DIST_L2, 5)
+    return [(x, y) for x, y in points if dist_transform[y, x] > min_distance]
+
+def filter_away_from_object(points, mask, min_distance):
+    """
+    Filters OFF dots to ensure they are at least `min_distance` away from the object (mask).
+    """
+    inverse_mask = (mask == 0).astype(np.uint8)
+    dist_transform = cv2.distanceTransform(inverse_mask, cv2.DIST_L2, 5)
+    return [(x, y) for x, y in points if dist_transform[y, x] > min_distance]
+
 
 def draw_dots_and_circle(image, dot_positions, circle_positions, center, radius, dot_color, dot_radius):
     img_copy = image.copy()
@@ -161,20 +178,40 @@ for image_file in image_files:
     circle_positions = generate_circle_positions(center, radius, sampling_points)
     on_all, off_all = classify_positions(circle_positions, combined_mask)
 
+    def filter_near_edges(points, image_shape, margin):
+        h, w = image_shape[:2]
+        return [(x, y) for x, y in points if margin <= x < (w - margin) and margin <= y < (h - margin)]
+
     def attempt_dot_pick(ratio):
         test_radius = int(min(height, width) * ratio)
         circle_pos = generate_circle_positions(center, test_radius, sampling_points)
         on_temp, off_temp = classify_positions(circle_pos, combined_mask)
+
+        edge_margin = dot_radius + 25
+        print(f"\n🔹 Circle radius = {test_radius}px")
+        print(f"Original ON: {len(on_temp)}, OFF: {len(off_temp)}")
+        
+        on_temp = filter_near_mask_edges(on_temp, combined_mask, min_distance=edge_margin)
+        off_temp = filter_away_from_object(off_temp, combined_mask, min_distance=edge_margin)
+        circle_filtered = filter_near_edges(circle_pos, combined_mask.shape, edge_margin)
+        
+        print(f"After edge filter — ON: {len(on_temp)}, OFF: {len(off_temp)}")
+
         try:
             on_ext = pick_evenly_spaced(on_temp, num_dots * 2)
             off_ext = pick_evenly_spaced(off_temp, num_dots * 2)
-            return on_ext, off_ext, circle_pos, test_radius
+            return on_ext, off_ext, circle_filtered, test_radius
         except:
-            return None, None, circle_pos, test_radius
+            return None, None, circle_filtered, test_radius
 
     try:
+        edge_margin = dot_radius + 25
+        on_all = filter_near_mask_edges(on_all, combined_mask, min_distance=edge_margin)
+        off_all = filter_away_from_object(off_all, combined_mask, min_distance=edge_margin)
+
         on_all_ext = pick_evenly_spaced(on_all, num_dots * 2)
         off_all_ext = pick_evenly_spaced(off_all, num_dots * 2)
+
     except ValueError:
         print("⚠️ Not enough dot positions. Use the slider to adjust radius.")
         fig, ax = plt.subplots(figsize=(8, 8))
@@ -184,11 +221,17 @@ for image_file in image_files:
         img_display = ax.imshow(rgb_img)
 
         def update(val):
-            on_ext, off_ext, pos, updated_r = attempt_dot_pick(val)
+            on_ext, off_ext, circle_pos_filtered, updated_r = attempt_dot_pick(val)
             if on_ext and off_ext:
-                preview = draw_dots_and_circle(rgb_img, on_ext[:num_dots], pos, center, updated_r, dot_color, dot_radius)
+                preview = draw_dots_and_circle(rgb_img, on_ext[:num_dots], circle_pos_filtered, center, updated_r, dot_color, dot_radius)
+                
+                # 🔍 Optional: draw yellow dots to preview all valid filtered positions
+                for x, y in circle_pos_filtered:
+                    cv2.circle(preview, (x, y), 3, (0, 255, 255), -1)
+
                 img_display.set_data(preview)
                 fig.canvas.draw_idle()
+
 
         radius_slider.on_changed(update)
         update(circle_radius_ratio)
@@ -197,10 +240,12 @@ for image_file in image_files:
 
         final_r = radius_slider.val
         on_all_ext, off_all_ext, circle_positions, radius = attempt_dot_pick(final_r)
+
         if not on_all_ext or not off_all_ext:
             print("❌ Still not enough points. Skipping.")
             continue
 
+    # Divide into Mooney and Gray
     on_mooney = on_all_ext[::2]
     on_gray   = on_all_ext[1::2]
     off_mooney = off_all_ext[::2]
@@ -208,8 +253,8 @@ for image_file in image_files:
 
     # Show preview
     circle_img = draw_dots_and_circle(rgb_img, [], circle_positions, center, radius, dot_color, dot_radius)
-    mooney_on = draw_dots_and_circle(rgb_img, on_mooney, circle_positions, center, radius, dot_color, dot_radius)
-    mooney_off = draw_dots_and_circle(rgb_img, off_mooney, circle_positions, center, radius, dot_color, dot_radius)
+    mooney_on = draw_dots_and_circle(rgb_img, on_all_ext, circle_positions, center, radius, dot_color, dot_radius)
+    mooney_off = draw_dots_and_circle(rgb_img, off_all_ext, circle_positions, center, radius, dot_color, dot_radius)
     fig, axs = plt.subplots(1, 3, figsize=(15, 5))
     axs[0].imshow(circle_img); axs[0].set_title("Circle only")
     axs[1].imshow(mooney_off); axs[1].set_title("Dots OFF object")
