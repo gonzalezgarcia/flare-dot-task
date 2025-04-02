@@ -23,10 +23,7 @@ models/
 ## Before running, download the following
 ### 🔗 Model Weights
 
-Download the SAM model checkpoint from the official repo and place it in the `models/` folder:
-
-- [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
-- File: `sam_vit_h_4b8939.pth`
+Download the SAM model checkpoint [from the official repo](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and place it in the `models/` folder:
 
 Or use this direct link:
 ```bash
