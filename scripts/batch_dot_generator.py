@@ -2,6 +2,7 @@
 import os, cv2, numpy as np, matplotlib.pyplot as plt, torch, json, csv, argparse
 from matplotlib.widgets import Slider
 from segment_anything import sam_model_registry, SamPredictor
+print("Imports done.")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--force', action='store_true', help='Force reprocessing of images')
@@ -27,9 +28,11 @@ circle_radius_ratio = 0.5
 os.makedirs(output_dir, exist_ok=True)
 
 # %% Setup SAM
+print("Loading SAM model...")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 sam = sam_model_registry[model_type](checkpoint=sam_checkpoint).to(device)
 predictor = SamPredictor(sam)
+print("model loaded.")
 
 # %% Functions
 def get_center(image): h, w = image.shape[:2]; return w // 2, h // 2

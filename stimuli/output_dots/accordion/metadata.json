@@ -1,0 +1,244 @@
+{
+  "base_name": "accordion",
+  "click_points": [
+    [
+      608,
+      1073
+    ],
+    [
+      326,
+      652
+    ],
+    [
+      513,
+      556
+    ],
+    [
+      865,
+      372
+    ],
+    [
+      1022,
+      276
+    ],
+    [
+      1218,
+      172
+    ],
+    [
+      1228,
+      133
+    ],
+    [
+      1517,
+      867
+    ],
+    [
+      1265,
+      1034
+    ],
+    [
+      1086,
+      955
+    ],
+    [
+      881,
+      498
+    ]
+  ],
+  "circle_radius": 620,
+  "dots": [
+    {
+      "image": "accordion_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1420,
+      "y": 800
+    },
+    {
+      "image": "accordion_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1400,
+      "y": 954
+    },
+    {
+      "image": "accordion_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 223,
+      "y": 571
+    },
+    {
+      "image": "accordion_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 536,
+      "y": 239
+    },
+    {
+      "image": "accordion_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 683,
+      "y": 190
+    },
+    {
+      "image": "accordion_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 838,
+      "y": 181
+    },
+    {
+      "image": "accordion_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1343,
+      "y": 1098
+    },
+    {
+      "image": "accordion_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1251,
+      "y": 1224
+    },
+    {
+      "image": "accordion_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1132,
+      "y": 1323
+    },
+    {
+      "image": "accordion_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 991,
+      "y": 1389
+    },
+    {
+      "image": "accordion_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 838,
+      "y": 1418
+    },
+    {
+      "image": "accordion_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 683,
+      "y": 1409
+    },
+    {
+      "image": "accordion_gray_dot_on1.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1415,
+      "y": 877
+    },
+    {
+      "image": "accordion_gray_dot_on2.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 199,
+      "y": 645
+    },
+    {
+      "image": "accordion_gray_dot_on3.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 256,
+      "y": 501
+    },
+    {
+      "image": "accordion_gray_dot_on4.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 608,
+      "y": 210
+    },
+    {
+      "image": "accordion_gray_dot_on5.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 761,
+      "y": 181
+    },
+    {
+      "image": "accordion_gray_dot_on6.jpg",
+      "label": "on",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 916,
+      "y": 190
+    },
+    {
+      "image": "accordion_gray_dot_off1.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 1,
+      "x": 1301,
+      "y": 1164
+    },
+    {
+      "image": "accordion_gray_dot_off2.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 2,
+      "x": 1195,
+      "y": 1277
+    },
+    {
+      "image": "accordion_gray_dot_off3.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 3,
+      "x": 1063,
+      "y": 1360
+    },
+    {
+      "image": "accordion_gray_dot_off4.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 4,
+      "x": 916,
+      "y": 1409
+    },
+    {
+      "image": "accordion_gray_dot_off5.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 5,
+      "x": 761,
+      "y": 1418
+    },
+    {
+      "image": "accordion_gray_dot_off6.jpg",
+      "label": "off",
+      "type": "gray",
+      "dot_number": 6,
+      "x": 467,
+      "y": 1323
+    }
+  ]
+}
