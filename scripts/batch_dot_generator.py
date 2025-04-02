@@ -26,6 +26,18 @@ circle_radius_ratio = 0.5
 
 os.makedirs(output_dir, exist_ok=True)
 
+# get name of images in gray_dir
+image_files = sorted([f for f in os.listdir(gray_dir) if f.endswith('.jpg')])
+
+# remove .jpg from image_files
+image_files = [os.path.splitext(f)[0] for f in image_files]
+# save image_files to a text file
+with open(os.path.join(output_dir, 'image_files.txt'), 'w') as f:
+    for item in image_files:
+        f.write("%s\n" % item)
+        
+        
+
 # %% Setup SAM
 device = "cuda" if torch.cuda.is_available() else "cpu"
 sam = sam_model_registry[model_type](checkpoint=sam_checkpoint).to(device)
