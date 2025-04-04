@@ -1,0 +1,152 @@
+{
+  "base_name": "egg_roll",
+  "click_points": [
+    [
+      145,
+      373
+    ],
+    [
+      312,
+      420
+    ],
+    [
+      307,
+      207
+    ],
+    [
+      406,
+      199
+    ]
+  ],
+  "circle_radius": 266,
+  "dots": [
+    {
+      "image": "egg_roll_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 32,
+      "y": 394
+    },
+    {
+      "image": "egg_roll_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 18,
+      "y": 363
+    },
+    {
+      "image": "egg_roll_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 8,
+      "y": 332
+    },
+    {
+      "image": "egg_roll_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 2,
+      "y": 299
+    },
+    {
+      "image": "egg_roll_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 0,
+      "y": 265
+    },
+    {
+      "image": "egg_roll_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 2,
+      "y": 232
+    },
+    {
+      "image": "egg_roll_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 499,
+      "y": 137
+    },
+    {
+      "image": "egg_roll_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 513,
+      "y": 168
+    },
+    {
+      "image": "egg_roll_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 32,
+      "y": 137
+    },
+    {
+      "image": "egg_roll_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 50,
+      "y": 109
+    },
+    {
+      "image": "egg_roll_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 72,
+      "y": 83
+    },
+    {
+      "image": "egg_roll_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 96,
+      "y": 61
+    },
+    {
+      "image": "egg_roll_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 123,
+      "y": 41
+    },
+    {
+      "image": "egg_roll_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 152,
+      "y": 25
+    },
+    {
+      "image": "egg_roll_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 183,
+      "y": 13
+    },
+    {
+      "image": "egg_roll_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 216,
+      "y": 4
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "base_name": "rattlesnake",
+  "click_points": [
+    [
+      666,
+      191
+    ],
+    [
+      393,
+      345
+    ],
+    [
+      233,
+      723
+    ],
+    [
+      647,
+      577
+    ],
+    [
+      633,
+      759
+    ]
+  ],
+  "circle_radius": 383,
+  "dots": [
+    {
+      "image": "rattlesnake_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 956,
+      "y": 740
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 935,
+      "y": 784
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 320,
+      "y": 862
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 290,
+      "y": 825
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 264,
+      "y": 784
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 243,
+      "y": 740
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 229,
+      "y": 695
+    },
+    {
+      "image": "rattlesnake_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 220,
+      "y": 648
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 983,
+      "y": 600
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 844,
+      "y": 895
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 763,
+      "y": 946
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 671,
+      "y": 976
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 575,
+      "y": 982
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 481,
+      "y": 964
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 229,
+      "y": 504
+    },
+    {
+      "image": "rattlesnake_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 264,
+      "y": 415
+    }
+  ]
+}

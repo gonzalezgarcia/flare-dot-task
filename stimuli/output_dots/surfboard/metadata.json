@@ -1,0 +1,152 @@
+{
+  "base_name": "surfboard",
+  "click_points": [
+    [
+      477,
+      489
+    ],
+    [
+      802,
+      739
+    ],
+    [
+      1176,
+      1043
+    ],
+    [
+      1260,
+      1176
+    ]
+  ],
+  "circle_radius": 492,
+  "dots": [
+    {
+      "image": "surfboard_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1198,
+      "y": 1089
+    },
+    {
+      "image": "surfboard_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1158,
+      "y": 1136
+    },
+    {
+      "image": "surfboard_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1113,
+      "y": 1179
+    },
+    {
+      "image": "surfboard_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1063,
+      "y": 1215
+    },
+    {
+      "image": "surfboard_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 401,
+      "y": 510
+    },
+    {
+      "image": "surfboard_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 441,
+      "y": 463
+    },
+    {
+      "image": "surfboard_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 486,
+      "y": 420
+    },
+    {
+      "image": "surfboard_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 536,
+      "y": 384
+    },
+    {
+      "image": "surfboard_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1292,
+      "y": 800
+    },
+    {
+      "image": "surfboard_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 892,
+      "y": 1283
+    },
+    {
+      "image": "surfboard_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 647,
+      "y": 1267
+    },
+    {
+      "image": "surfboard_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 441,
+      "y": 1136
+    },
+    {
+      "image": "surfboard_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 323,
+      "y": 922
+    },
+    {
+      "image": "surfboard_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 323,
+      "y": 677
+    },
+    {
+      "image": "surfboard_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 892,
+      "y": 316
+    },
+    {
+      "image": "surfboard_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1113,
+      "y": 420
+    }
+  ]
+}

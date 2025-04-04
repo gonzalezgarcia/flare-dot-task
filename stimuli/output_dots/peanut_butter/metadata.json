@@ -1,0 +1,160 @@
+{
+  "base_name": "peanut_butter",
+  "click_points": [
+    [
+      930,
+      755
+    ],
+    [
+      480,
+      937
+    ],
+    [
+      347,
+      1308
+    ],
+    [
+      890,
+      1177
+    ],
+    [
+      1285,
+      1394
+    ],
+    [
+      387,
+      1439
+    ]
+  ],
+  "circle_radius": 800,
+  "dots": [
+    {
+      "image": "peanut_butter_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1501,
+      "y": 1185
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1383,
+      "y": 1347
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1228,
+      "y": 1475
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1047,
+      "y": 1560
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 850,
+      "y": 1598
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 650,
+      "y": 1585
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 459,
+      "y": 1523
+    },
+    {
+      "image": "peanut_butter_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 290,
+      "y": 1416
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1593,
+      "y": 900
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 56,
+      "y": 1094
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 0,
+      "y": 799
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 152,
+      "y": 329
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 371,
+      "y": 124
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 650,
+      "y": 14
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 949,
+      "y": 14
+    },
+    {
+      "image": "peanut_butter_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1228,
+      "y": 124
+    }
+  ]
+}

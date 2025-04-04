@@ -1,0 +1,144 @@
+{
+  "base_name": "hot-water_bottle",
+  "click_points": [
+    [
+      368,
+      656
+    ],
+    [
+      1412,
+      567
+    ]
+  ],
+  "circle_radius": 800,
+  "dots": [
+    {
+      "image": "hot-water_bottle_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 216,
+      "y": 1347
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 152,
+      "y": 1270
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 98,
+      "y": 1185
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 56,
+      "y": 1094
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 25,
+      "y": 998
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 6,
+      "y": 900
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 0,
+      "y": 799
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 6,
+      "y": 699
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1593,
+      "y": 900
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1501,
+      "y": 1185
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1309,
+      "y": 1416
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1047,
+      "y": 1560
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 749,
+      "y": 1598
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 459,
+      "y": 1523
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 290,
+      "y": 183
+    },
+    {
+      "image": "hot-water_bottle_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 552,
+      "y": 39
+    }
+  ]
+}

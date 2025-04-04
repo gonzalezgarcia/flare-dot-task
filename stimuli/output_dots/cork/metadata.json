@@ -1,0 +1,160 @@
+{
+  "base_name": "cork",
+  "click_points": [
+    [
+      337,
+      978
+    ],
+    [
+      752,
+      1011
+    ],
+    [
+      829,
+      626
+    ],
+    [
+      1194,
+      493
+    ],
+    [
+      1190,
+      857
+    ],
+    [
+      851,
+      1115
+    ]
+  ],
+  "circle_radius": 626,
+  "dots": [
+    {
+      "image": "cork_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1426,
+      "y": 800
+    },
+    {
+      "image": "cork_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1421,
+      "y": 878
+    },
+    {
+      "image": "cork_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1406,
+      "y": 955
+    },
+    {
+      "image": "cork_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1382,
+      "y": 1030
+    },
+    {
+      "image": "cork_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 251,
+      "y": 1101
+    },
+    {
+      "image": "cork_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 217,
+      "y": 1030
+    },
+    {
+      "image": "cork_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 193,
+      "y": 955
+    },
+    {
+      "image": "cork_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 178,
+      "y": 878
+    },
+    {
+      "image": "cork_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1306,
+      "y": 1167
+    },
+    {
+      "image": "cork_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1135,
+      "y": 1328
+    },
+    {
+      "image": "cork_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 917,
+      "y": 1414
+    },
+    {
+      "image": "cork_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 682,
+      "y": 1414
+    },
+    {
+      "image": "cork_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 464,
+      "y": 1328
+    },
+    {
+      "image": "cork_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 178,
+      "y": 721
+    },
+    {
+      "image": "cork_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 251,
+      "y": 498
+    },
+    {
+      "image": "cork_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 400,
+      "y": 317
+    }
+  ]
+}

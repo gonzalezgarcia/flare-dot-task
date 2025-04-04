@@ -1,0 +1,196 @@
+{
+  "base_name": "aloe",
+  "click_points": [
+    [
+      249,
+      963
+    ],
+    [
+      718,
+      1219
+    ],
+    [
+      688,
+      1335
+    ],
+    [
+      688,
+      1400
+    ],
+    [
+      932,
+      1199
+    ],
+    [
+      1125,
+      965
+    ],
+    [
+      977,
+      853
+    ],
+    [
+      915,
+      751
+    ],
+    [
+      871,
+      687
+    ],
+    [
+      771,
+      734
+    ],
+    [
+      686,
+      696
+    ],
+    [
+      534,
+      747
+    ],
+    [
+      196,
+      296
+    ],
+    [
+      1165,
+      529
+    ],
+    [
+      1250,
+      905
+    ]
+  ],
+  "circle_radius": 380,
+  "dots": [
+    {
+      "image": "aloe_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1177,
+      "y": 847
+    },
+    {
+      "image": "aloe_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1168,
+      "y": 894
+    },
+    {
+      "image": "aloe_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1153,
+      "y": 939
+    },
+    {
+      "image": "aloe_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 917,
+      "y": 1161
+    },
+    {
+      "image": "aloe_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 728,
+      "y": 1173
+    },
+    {
+      "image": "aloe_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 467,
+      "y": 983
+    },
+    {
+      "image": "aloe_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 446,
+      "y": 939
+    },
+    {
+      "image": "aloe_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 446,
+      "y": 660
+    },
+    {
+      "image": "aloe_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1077,
+      "y": 1060
+    },
+    {
+      "image": "aloe_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 638,
+      "y": 1143
+    },
+    {
+      "image": "aloe_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 557,
+      "y": 1092
+    },
+    {
+      "image": "aloe_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 522,
+      "y": 539
+    },
+    {
+      "image": "aloe_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 682,
+      "y": 438
+    },
+    {
+      "image": "aloe_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 776,
+      "y": 420
+    },
+    {
+      "image": "aloe_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 1003,
+      "y": 479
+    },
+    {
+      "image": "aloe_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1168,
+      "y": 705
+    }
+  ]
+}

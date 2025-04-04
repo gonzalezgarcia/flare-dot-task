@@ -1,0 +1,168 @@
+{
+  "base_name": "sardine",
+  "click_points": [
+    [
+      508,
+      981
+    ],
+    [
+      660,
+      612
+    ],
+    [
+      633,
+      342
+    ],
+    [
+      120,
+      743
+    ],
+    [
+      1386,
+      1068
+    ],
+    [
+      1225,
+      533
+    ],
+    [
+      441,
+      1341
+    ],
+    [
+      185,
+      1163
+    ]
+  ],
+  "circle_radius": 800,
+  "dots": [
+    {
+      "image": "sardine_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1593,
+      "y": 900
+    },
+    {
+      "image": "sardine_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1543,
+      "y": 1094
+    },
+    {
+      "image": "sardine_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1447,
+      "y": 1270
+    },
+    {
+      "image": "sardine_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1383,
+      "y": 1347
+    },
+    {
+      "image": "sardine_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 1309,
+      "y": 1416
+    },
+    {
+      "image": "sardine_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 1228,
+      "y": 1475
+    },
+    {
+      "image": "sardine_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 1047,
+      "y": 1560
+    },
+    {
+      "image": "sardine_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 949,
+      "y": 1585
+    },
+    {
+      "image": "sardine_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 459,
+      "y": 1523
+    },
+    {
+      "image": "sardine_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 290,
+      "y": 1416
+    },
+    {
+      "image": "sardine_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 56,
+      "y": 505
+    },
+    {
+      "image": "sardine_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 152,
+      "y": 329
+    },
+    {
+      "image": "sardine_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 290,
+      "y": 183
+    },
+    {
+      "image": "sardine_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 459,
+      "y": 76
+    },
+    {
+      "image": "sardine_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 650,
+      "y": 14
+    },
+    {
+      "image": "sardine_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 850,
+      "y": 1
+    }
+  ]
+}

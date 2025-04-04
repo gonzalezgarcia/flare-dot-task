@@ -21,7 +21,7 @@ model_type = "vit_h"
 
 dot_color = (0, 0, 255)
 dot_radius = 15
-num_dots = 6  # means 6 for mooney, 6 for gray
+num_dots = 8  # means 6 for mooney (previously 6 for gray as well. not anymore)
 sampling_points = 50
 circle_radius_ratio = 0.5
 
@@ -213,8 +213,8 @@ for image_file in image_files:
         print(f"After edge filter — ON: {len(on_temp)}, OFF: {len(off_temp)}")
 
         try:
-            on_ext = pick_evenly_spaced(on_temp, num_dots * 2)
-            off_ext = pick_evenly_spaced(off_temp, num_dots * 2)
+            on_ext = pick_evenly_spaced(on_temp, num_dots)
+            off_ext = pick_evenly_spaced(off_temp, num_dots)
             return on_ext, off_ext, circle_filtered, test_radius
         except:
             return None, None, circle_filtered, test_radius
@@ -224,8 +224,8 @@ for image_file in image_files:
         on_all = filter_near_mask_edges(on_all, combined_mask, min_distance=edge_margin)
         off_all = filter_away_from_object(off_all, combined_mask, min_distance=edge_margin)
 
-        on_all_ext = pick_evenly_spaced(on_all, num_dots * 2)
-        off_all_ext = pick_evenly_spaced(off_all, num_dots * 2)
+        on_all_ext = pick_evenly_spaced(on_all, num_dots)
+        off_all_ext = pick_evenly_spaced(off_all, num_dots)
 
     except ValueError:
         print("⚠️ Not enough dot positions. Use the slider to adjust radius.")
@@ -261,10 +261,10 @@ for image_file in image_files:
             continue
 
     # Divide into Mooney and Gray
-    on_mooney = on_all_ext[::2]
-    on_gray   = on_all_ext[1::2]
-    off_mooney = off_all_ext[::2]
-    off_gray   = off_all_ext[1::2]
+    on_mooney = on_all_ext #[::2]
+   # on_gray   = on_all_ext #[1::2]
+    off_mooney = off_all_ext #[::2]
+  #  off_gray   = off_all_ext[1::2]
 
     # Show preview
     circle_img = draw_dots_and_circle(rgb_img, [], circle_positions, center, radius, dot_color, dot_radius)
@@ -288,8 +288,8 @@ for image_file in image_files:
 
     meta["dots"] += save_dot_versions(mooney_img, on_mooney, "on", "mooney", base_name, output_subdir)
     meta["dots"] += save_dot_versions(mooney_img, off_mooney, "off", "mooney", base_name, output_subdir)
-    meta["dots"] += save_dot_versions(gray_img, on_gray, "on", "gray", base_name, output_subdir, grayscale=True)
-    meta["dots"] += save_dot_versions(gray_img, off_gray, "off", "gray", base_name, output_subdir, grayscale=True)
+    #meta["dots"] += save_dot_versions(gray_img, on_gray, "on", "gray", base_name, output_subdir, grayscale=True)
+    #meta["dots"] += save_dot_versions(gray_img, off_gray, "off", "gray", base_name, output_subdir, grayscale=True)
 
     with open(metadata_path, 'w') as f:
         json.dump(meta, f, indent=2)

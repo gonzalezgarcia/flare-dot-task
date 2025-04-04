@@ -1,0 +1,164 @@
+{
+  "base_name": "drill",
+  "click_points": [
+    [
+      625,
+      1446
+    ],
+    [
+      741,
+      1160
+    ],
+    [
+      682,
+      1107
+    ],
+    [
+      952,
+      1017
+    ],
+    [
+      672,
+      650
+    ],
+    [
+      499,
+      460
+    ],
+    [
+      378,
+      307
+    ]
+  ],
+  "circle_radius": 388,
+  "dots": [
+    {
+      "image": "drill_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1140,
+      "y": 986
+    },
+    {
+      "image": "drill_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1113,
+      "y": 1028
+    },
+    {
+      "image": "drill_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1082,
+      "y": 1065
+    },
+    {
+      "image": "drill_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1047,
+      "y": 1098
+    },
+    {
+      "image": "drill_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 1007,
+      "y": 1127
+    },
+    {
+      "image": "drill_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 965,
+      "y": 1151
+    },
+    {
+      "image": "drill_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 872,
+      "y": 1181
+    },
+    {
+      "image": "drill_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 824,
+      "y": 1187
+    },
+    {
+      "image": "drill_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1188,
+      "y": 800
+    },
+    {
+      "image": "drill_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 486,
+      "y": 1028
+    },
+    {
+      "image": "drill_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 439,
+      "y": 942
+    },
+    {
+      "image": "drill_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 415,
+      "y": 848
+    },
+    {
+      "image": "drill_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 415,
+      "y": 751
+    },
+    {
+      "image": "drill_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 775,
+      "y": 412
+    },
+    {
+      "image": "drill_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 872,
+      "y": 418
+    },
+    {
+      "image": "drill_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 965,
+      "y": 448
+    }
+  ]
+}

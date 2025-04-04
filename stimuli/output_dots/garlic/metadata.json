@@ -1,0 +1,168 @@
+{
+  "base_name": "garlic",
+  "click_points": [
+    [
+      265,
+      1300
+    ],
+    [
+      483,
+      856
+    ],
+    [
+      946,
+      1234
+    ],
+    [
+      1131,
+      1337
+    ],
+    [
+      1281,
+      889
+    ],
+    [
+      1008,
+      477
+    ],
+    [
+      1122,
+      243
+    ],
+    [
+      1499,
+      1209
+    ]
+  ],
+  "circle_radius": 738,
+  "dots": [
+    {
+      "image": "garlic_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1538,
+      "y": 800
+    },
+    {
+      "image": "garlic_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1532,
+      "y": 892
+    },
+    {
+      "image": "garlic_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1514,
+      "y": 983
+    },
+    {
+      "image": "garlic_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1486,
+      "y": 1071
+    },
+    {
+      "image": "garlic_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 1195,
+      "y": 1423
+    },
+    {
+      "image": "garlic_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 329,
+      "y": 1368
+    },
+    {
+      "image": "garlic_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 262,
+      "y": 1305
+    },
+    {
+      "image": "garlic_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1195,
+      "y": 176
+    },
+    {
+      "image": "garlic_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1028,
+      "y": 1501
+    },
+    {
+      "image": "garlic_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 938,
+      "y": 1524
+    },
+    {
+      "image": "garlic_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 661,
+      "y": 1524
+    },
+    {
+      "image": "garlic_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 571,
+      "y": 1501
+    },
+    {
+      "image": "garlic_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 485,
+      "y": 1467
+    },
+    {
+      "image": "garlic_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 202,
+      "y": 366
+    },
+    {
+      "image": "garlic_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 262,
+      "y": 294
+    },
+    {
+      "image": "garlic_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 329,
+      "y": 231
+    }
+  ]
+}

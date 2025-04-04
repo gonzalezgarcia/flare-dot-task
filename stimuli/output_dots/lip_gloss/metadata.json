@@ -1,0 +1,152 @@
+{
+  "base_name": "lip_gloss",
+  "click_points": [
+    [
+      487,
+      797
+    ],
+    [
+      588,
+      447
+    ],
+    [
+      911,
+      650
+    ],
+    [
+      135,
+      664
+    ]
+  ],
+  "circle_radius": 267,
+  "dots": [
+    {
+      "image": "lip_gloss_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 794,
+      "y": 782
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 770,
+      "y": 805
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 743,
+      "y": 825
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 713,
+      "y": 841
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 429,
+      "y": 805
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 405,
+      "y": 782
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 383,
+      "y": 756
+    },
+    {
+      "image": "lip_gloss_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 366,
+      "y": 728
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 848,
+      "y": 698
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 341,
+      "y": 533
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 351,
+      "y": 501
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 366,
+      "y": 471
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 383,
+      "y": 443
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 405,
+      "y": 417
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 429,
+      "y": 394
+    },
+    {
+      "image": "lip_gloss_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 770,
+      "y": 394
+    }
+  ]
+}

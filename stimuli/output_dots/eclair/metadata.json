@@ -1,0 +1,168 @@
+{
+  "base_name": "eclair",
+  "click_points": [
+    [
+      421,
+      832
+    ],
+    [
+      447,
+      922
+    ],
+    [
+      1005,
+      730
+    ],
+    [
+      994,
+      558
+    ],
+    [
+      868,
+      341
+    ],
+    [
+      500,
+      358
+    ],
+    [
+      248,
+      504
+    ],
+    [
+      214,
+      645
+    ]
+  ],
+  "circle_radius": 640,
+  "dots": [
+    {
+      "image": "eclair_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 297,
+      "y": 1180
+    },
+    {
+      "image": "eclair_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 232,
+      "y": 1133
+    },
+    {
+      "image": "eclair_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 173,
+      "y": 1078
+    },
+    {
+      "image": "eclair_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 20,
+      "y": 799
+    },
+    {
+      "image": "eclair_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 5,
+      "y": 720
+    },
+    {
+      "image": "eclair_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 0,
+      "y": 639
+    },
+    {
+      "image": "eclair_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 5,
+      "y": 559
+    },
+    {
+      "image": "eclair_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1259,
+      "y": 480
+    },
+    {
+      "image": "eclair_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1274,
+      "y": 720
+    },
+    {
+      "image": "eclair_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1200,
+      "y": 948
+    },
+    {
+      "image": "eclair_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1047,
+      "y": 1133
+    },
+    {
+      "image": "eclair_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 837,
+      "y": 1248
+    },
+    {
+      "image": "eclair_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 599,
+      "y": 1278
+    },
+    {
+      "image": "eclair_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 44,
+      "y": 404
+    },
+    {
+      "image": "eclair_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 173,
+      "y": 201
+    },
+    {
+      "image": "eclair_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 367,
+      "y": 60
+    }
+  ]
+}

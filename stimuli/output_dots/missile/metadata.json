@@ -1,0 +1,156 @@
+{
+  "base_name": "missile",
+  "click_points": [
+    [
+      573,
+      1073
+    ],
+    [
+      889,
+      842
+    ],
+    [
+      1133,
+      518
+    ],
+    [
+      700,
+      1103
+    ],
+    [
+      698,
+      1402
+    ]
+  ],
+  "circle_radius": 632,
+  "dots": [
+    {
+      "image": "missile_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 995,
+      "y": 1401
+    },
+    {
+      "image": "missile_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 918,
+      "y": 1420
+    },
+    {
+      "image": "missile_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 839,
+      "y": 1430
+    },
+    {
+      "image": "missile_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 760,
+      "y": 1430
+    },
+    {
+      "image": "missile_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 681,
+      "y": 1420
+    },
+    {
+      "image": "missile_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 604,
+      "y": 1401
+    },
+    {
+      "image": "missile_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 530,
+      "y": 1371
+    },
+    {
+      "image": "missile_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 461,
+      "y": 1333
+    },
+    {
+      "image": "missile_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1432,
+      "y": 800
+    },
+    {
+      "image": "missile_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1353,
+      "y": 1104
+    },
+    {
+      "image": "missile_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1138,
+      "y": 1333
+    },
+    {
+      "image": "missile_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 172,
+      "y": 879
+    },
+    {
+      "image": "missile_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 212,
+      "y": 567
+    },
+    {
+      "image": "missile_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 397,
+      "y": 313
+    },
+    {
+      "image": "missile_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 681,
+      "y": 179
+    },
+    {
+      "image": "missile_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 995,
+      "y": 198
+    }
+  ]
+}

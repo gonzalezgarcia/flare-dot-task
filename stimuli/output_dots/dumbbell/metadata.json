@@ -1,0 +1,156 @@
+{
+  "base_name": "dumbbell",
+  "click_points": [
+    [
+      203,
+      1009
+    ],
+    [
+      434,
+      1008
+    ],
+    [
+      703,
+      1016
+    ],
+    [
+      1264,
+      1005
+    ],
+    [
+      1530,
+      1018
+    ]
+  ],
+  "circle_radius": 629,
+  "dots": [
+    {
+      "image": "dumbbell_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1409,
+      "y": 956
+    },
+    {
+      "image": "dumbbell_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1384,
+      "y": 1031
+    },
+    {
+      "image": "dumbbell_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1351,
+      "y": 1103
+    },
+    {
+      "image": "dumbbell_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 1308,
+      "y": 1169
+    },
+    {
+      "image": "dumbbell_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 1258,
+      "y": 1230
+    },
+    {
+      "image": "dumbbell_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 1200,
+      "y": 1284
+    },
+    {
+      "image": "dumbbell_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 1137,
+      "y": 1331
+    },
+    {
+      "image": "dumbbell_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1067,
+      "y": 1369
+    },
+    {
+      "image": "dumbbell_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1429,
+      "y": 800
+    },
+    {
+      "image": "dumbbell_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 760,
+      "y": 1427
+    },
+    {
+      "image": "dumbbell_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 171,
+      "y": 799
+    },
+    {
+      "image": "dumbbell_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 215,
+      "y": 568
+    },
+    {
+      "image": "dumbbell_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 341,
+      "y": 369
+    },
+    {
+      "image": "dumbbell_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 532,
+      "y": 230
+    },
+    {
+      "image": "dumbbell_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 760,
+      "y": 172
+    },
+    {
+      "image": "dumbbell_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 994,
+      "y": 201
+    }
+  ]
+}

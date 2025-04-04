@@ -1,0 +1,160 @@
+{
+  "base_name": "puffin",
+  "click_points": [
+    [
+      648,
+      402
+    ],
+    [
+      761,
+      674
+    ],
+    [
+      712,
+      1305
+    ],
+    [
+      794,
+      1157
+    ],
+    [
+      938,
+      930
+    ],
+    [
+      513,
+      446
+    ]
+  ],
+  "circle_radius": 489,
+  "dots": [
+    {
+      "image": "puffin_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1195,
+      "y": 1087
+    },
+    {
+      "image": "puffin_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1156,
+      "y": 1134
+    },
+    {
+      "image": "puffin_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 769,
+      "y": 1288
+    },
+    {
+      "image": "puffin_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 591,
+      "y": 357
+    },
+    {
+      "image": "puffin_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 648,
+      "y": 334
+    },
+    {
+      "image": "puffin_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 708,
+      "y": 319
+    },
+    {
+      "image": "puffin_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 769,
+      "y": 311
+    },
+    {
+      "image": "puffin_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 830,
+      "y": 311
+    },
+    {
+      "image": "puffin_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1289,
+      "y": 800
+    },
+    {
+      "image": "puffin_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1008,
+      "y": 1242
+    },
+    {
+      "image": "puffin_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 591,
+      "y": 1242
+    },
+    {
+      "image": "puffin_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 443,
+      "y": 1134
+    },
+    {
+      "image": "puffin_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 345,
+      "y": 980
+    },
+    {
+      "image": "puffin_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 311,
+      "y": 799
+    },
+    {
+      "image": "puffin_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 345,
+      "y": 619
+    },
+    {
+      "image": "puffin_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 951,
+      "y": 334
+    }
+  ]
+}

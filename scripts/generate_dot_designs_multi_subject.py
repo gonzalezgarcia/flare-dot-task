@@ -8,7 +8,10 @@ import os
 # === CONFIGURATION ===
 
 VERBOSE_LEVEL = "summary"  # Options: "full", "summary", "none"
-optimization_attemps = 100  # Number of attempts to optimize the design
+optimization_attemps = 200  # Number of attempts to optimize the design
+unambiguous_image = "color" # either color or gray
+
+n_subjects = 50  # Number of subjects to generate designs for
 
 stimulus_manipulations = ["regular", "upside_down", "horizontal_flip"]
 dot_trials_per_image = 4
@@ -78,9 +81,15 @@ def assign_manipulations(target_sets, catch_sets):
 def generate_dot_trials(images, phase_lookup, image_info, block):
     trials = []
     for img in images:
+
+        
         for rep in range(dot_trials_per_image):
             dot_pos = "on" if rep % 2 == 0 else "off"
-            dot_num = rep % 2 + 1
+            if phase_lookup[img] == "pre":
+                dot_num = rep + 1
+            else:
+                dot_num = dot_trials_per_image + (rep + 1)
+
             trials.append({
                 "block": block,
                 "block_type": "dot",
@@ -115,10 +124,10 @@ def generate_recognition_trials(pre_imgs, post_imgs, image_info, block):
                 "block": block,
                 "block_type": "recognition",
                 "image_id": img,
-                "filename": f"{img}_gray",
+                "filename": f"{img}_gray" if unambiguous_image == "gray" else f"{img}",
                 "image_type": image_info[img]["image_type"],
                 "manipulation": image_info[img]["manipulation"],
-                "phase": "gray",
+                "phase": unambiguous_image,
                 "dot_position": None
             })
 
@@ -199,6 +208,8 @@ def generate_full_session(filepath="image_files.txt", verbose=False):
 
     print(f"Total blocks: {blocks_total} (last one is dot-only)")
     print(f"Total trials: {len(df)}")
+    print(f"Target images: {n_target_sets * images_per_set}")
+    print(f"Catch images: {int(n_target_sets * images_per_set * catch_ratio)}")
 
 
     if verbose:
@@ -229,7 +240,7 @@ def fitness_full(sequence):
         if (
             curr["image_id"] == next_trial["image_id"]
             and curr["phase"] in ["pre", "post"]
-            and next_trial["phase"] == "gray"
+            and next_trial["phase"] == unambiguous_image
         ):
             violations += 10
 
@@ -304,13 +315,13 @@ def optimize_session(df, fitness_fn, generations=100, population_size=30, elite_
         dot_trials = block_df[block_df["block_type"] == "dot"].to_dict("records")
         rec_df = block_df[block_df["block_type"] == "recognition"]
         mooney_trials = rec_df[rec_df["phase"].isin(["pre", "post"])].to_dict("records")
-        gray_trials = rec_df[rec_df["phase"] == "gray"].to_dict("records")
+        gray_trials = rec_df[rec_df["phase"] == unambiguous_image].to_dict("records")
 
         if VERBOSE_LEVEL in ["full"]:
             print(f"\n🔁 Optimizing block {block_num}...")
             print(f"  🔸 {len(dot_trials)} dot trials")
             print(f"  🔹 {len(mooney_trials)} mooney recognition trials")
-            print(f"  🔸 {len(gray_trials)} gray trials")
+            print(f"  🔸 {len(gray_trials)} unambiguous trials")
 
         optimized_block = []
 
@@ -348,7 +359,7 @@ def validate_constraints(df, verbose=True):
             and next_trial["block_type"] == "recognition"
             and curr["image_id"] == next_trial["image_id"]
             and curr["phase"] in ["pre", "post"]
-            and next_trial["phase"] == "gray"
+            and next_trial["phase"] == unambiguous_image
         ):
             violations["gray_after_mooney"].append((curr["trial_number"], next_trial["trial_number"], curr["image_id"]))
 
@@ -426,5 +437,5 @@ def run_subject(subject_id, MAX_RETRIES=10):
     print(f"✅ Subject {subject_id} saved to {filename} nevertheless...")
 
 if __name__ == "__main__":
-    for subj in range(1, 6):  # Generate for subjects 1 to 5
+    for subj in range(1, n_subjects):  # Generate for subjects 1 to 5
         run_subject(subj, optimization_attemps)

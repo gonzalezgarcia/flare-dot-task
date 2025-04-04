@@ -1,0 +1,144 @@
+{
+  "base_name": "parking_meter",
+  "click_points": [
+    [
+      795,
+      939
+    ],
+    [
+      770,
+      170
+    ]
+  ],
+  "circle_radius": 558,
+  "dots": [
+    {
+      "image": "parking_meter_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1037,
+      "y": 1304
+    },
+    {
+      "image": "parking_meter_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 904,
+      "y": 1348
+    },
+    {
+      "image": "parking_meter_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 764,
+      "y": 1356
+    },
+    {
+      "image": "parking_meter_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 627,
+      "y": 1330
+    },
+    {
+      "image": "parking_meter_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 562,
+      "y": 295
+    },
+    {
+      "image": "parking_meter_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 695,
+      "y": 251
+    },
+    {
+      "image": "parking_meter_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 835,
+      "y": 243
+    },
+    {
+      "image": "parking_meter_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 972,
+      "y": 269
+    },
+    {
+      "image": "parking_meter_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1358,
+      "y": 800
+    },
+    {
+      "image": "parking_meter_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1318,
+      "y": 1005
+    },
+    {
+      "image": "parking_meter_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1206,
+      "y": 1181
+    },
+    {
+      "image": "parking_meter_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 393,
+      "y": 1181
+    },
+    {
+      "image": "parking_meter_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 281,
+      "y": 1005
+    },
+    {
+      "image": "parking_meter_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 242,
+      "y": 799
+    },
+    {
+      "image": "parking_meter_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 281,
+      "y": 594
+    },
+    {
+      "image": "parking_meter_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 393,
+      "y": 418
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "base_name": "sidecar",
+  "click_points": [
+    [
+      176,
+      824
+    ],
+    [
+      485,
+      193
+    ],
+    [
+      951,
+      531
+    ],
+    [
+      751,
+      793
+    ]
+  ],
+  "circle_radius": 688,
+  "dots": [
+    {
+      "image": "sidecar_mooney_dot_on1.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 197,
+      "y": 1131
+    },
+    {
+      "image": "sidecar_mooney_dot_on2.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 160,
+      "y": 1053
+    },
+    {
+      "image": "sidecar_mooney_dot_on3.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 133,
+      "y": 971
+    },
+    {
+      "image": "sidecar_mooney_dot_on4.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 117,
+      "y": 886
+    },
+    {
+      "image": "sidecar_mooney_dot_on5.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 112,
+      "y": 799
+    },
+    {
+      "image": "sidecar_mooney_dot_on6.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 117,
+      "y": 713
+    },
+    {
+      "image": "sidecar_mooney_dot_on7.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 133,
+      "y": 628
+    },
+    {
+      "image": "sidecar_mooney_dot_on8.jpg",
+      "label": "on",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 298,
+      "y": 329
+    },
+    {
+      "image": "sidecar_mooney_dot_off1.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 1,
+      "x": 1488,
+      "y": 800
+    },
+    {
+      "image": "sidecar_mooney_dot_off2.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 2,
+      "x": 1439,
+      "y": 1053
+    },
+    {
+      "image": "sidecar_mooney_dot_off3.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 3,
+      "x": 1168,
+      "y": 1380
+    },
+    {
+      "image": "sidecar_mooney_dot_off4.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 4,
+      "x": 928,
+      "y": 1475
+    },
+    {
+      "image": "sidecar_mooney_dot_off5.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 5,
+      "x": 671,
+      "y": 1475
+    },
+    {
+      "image": "sidecar_mooney_dot_off6.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 6,
+      "x": 431,
+      "y": 1380
+    },
+    {
+      "image": "sidecar_mooney_dot_off7.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 7,
+      "x": 756,
+      "y": 113
+    },
+    {
+      "image": "sidecar_mooney_dot_off8.jpg",
+      "label": "off",
+      "type": "mooney",
+      "dot_number": 8,
+      "x": 1012,
+      "y": 145
+    }
+  ]
+}
