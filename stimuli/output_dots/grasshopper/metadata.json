@@ -2,159 +2,167 @@
   "base_name": "grasshopper",
   "click_points": [
     [
-      330,
-      769
+      258,
+      556
     ],
     [
-      650,
-      617
+      500,
+      463
     ],
     [
-      593,
-      422
+      778,
+      363
     ],
     [
-      1290,
-      530
+      605,
+      340
     ],
     [
-      733,
-      722
+      435,
+      324
     ],
     [
-      280,
-      641
+      568,
+      556
+    ],
+    [
+      394,
+      622
+    ],
+    [
+      227,
+      509
     ]
   ],
-  "circle_radius": 397,
+  "circle_radius": 294,
   "dots": [
     {
       "image": "grasshopper_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 406,
-      "y": 750
+      "x": 308,
+      "y": 563
     },
     {
       "image": "grasshopper_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 415,
-      "y": 701
+      "x": 315,
+      "y": 526
     },
     {
       "image": "grasshopper_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 430,
-      "y": 653
+      "x": 326,
+      "y": 491
     },
     {
       "image": "grasshopper_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 452,
-      "y": 608
+      "x": 342,
+      "y": 458
     },
     {
       "image": "grasshopper_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 478,
-      "y": 566
+      "x": 362,
+      "y": 427
     },
     {
       "image": "grasshopper_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 922,
-      "y": 422
+      "x": 690,
+      "y": 320
     },
     {
       "image": "grasshopper_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 969,
-      "y": 440
+      "x": 725,
+      "y": 333
     },
     {
       "image": "grasshopper_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1012,
-      "y": 464
+      "x": 757,
+      "y": 351
     },
     {
       "image": "grasshopper_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1197,
-      "y": 800
+      "x": 894,
+      "y": 600
     },
     {
       "image": "grasshopper_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1184,
-      "y": 898
+      "x": 884,
+      "y": 673
     },
     {
       "image": "grasshopper_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1147,
-      "y": 991
+      "x": 857,
+      "y": 741
     },
     {
       "image": "grasshopper_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1089,
-      "y": 1071
+      "x": 814,
+      "y": 801
     },
     {
       "image": "grasshopper_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1012,
-      "y": 1135
+      "x": 757,
+      "y": 848
     },
     {
       "image": "grasshopper_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 922,
-      "y": 1177
+      "x": 690,
+      "y": 879
     },
     {
       "image": "grasshopper_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 824,
-      "y": 1196
+      "x": 618,
+      "y": 893
     },
     {
       "image": "grasshopper_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 725,
-      "y": 1189
+      "x": 544,
+      "y": 888
     }
   ]
 }

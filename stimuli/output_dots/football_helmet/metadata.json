@@ -2,163 +2,175 @@
   "base_name": "football_helmet",
   "click_points": [
     [
-      158,
-      650
+      135,
+      613
     ],
     [
-      331,
-      659
+      322,
+      638
     ],
     [
-      489,
-      513
+      659,
+      581
     ],
     [
-      921,
-      219
+      850,
+      379
     ],
     [
-      1068,
-      479
+      539,
+      796
     ],
     [
-      899,
-      981
+      350,
+      878
     ],
     [
-      395,
-      967
+      414,
+      634
+    ],
+    [
+      1006,
+      765
+    ],
+    [
+      527,
+      367
+    ],
+    [
+      615,
+      258
     ]
   ],
-  "circle_radius": 640,
+  "circle_radius": 474,
   "dots": [
     {
       "image": "football_helmet_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1274,
-      "y": 720
+      "x": 1074,
+      "y": 600
     },
     {
       "image": "football_helmet_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1259,
-      "y": 799
+      "x": 1059,
+      "y": 717
     },
     {
       "image": "football_helmet_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1235,
-      "y": 875
+      "x": 1015,
+      "y": 828
     },
     {
       "image": "football_helmet_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1200,
-      "y": 948
+      "x": 945,
+      "y": 924
     },
     {
       "image": "football_helmet_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1157,
-      "y": 1016
+      "x": 853,
+      "y": 1000
     },
     {
       "image": "football_helmet_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1106,
-      "y": 201
+      "x": 346,
+      "y": 1000
     },
     {
       "image": "football_helmet_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1157,
-      "y": 263
+      "x": 126,
+      "y": 599
     },
     {
       "image": "football_helmet_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1200,
-      "y": 331
+      "x": 853,
+      "y": 199
     },
     {
       "image": "football_helmet_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 982,
-      "y": 1180
+      "x": 629,
+      "y": 1073
     },
     {
       "image": "football_helmet_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 759,
-      "y": 1268
+      "x": 570,
+      "y": 1073
     },
     {
       "image": "football_helmet_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 520,
-      "y": 1268
+      "x": 140,
+      "y": 482
     },
     {
       "image": "football_helmet_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 297,
-      "y": 1180
+      "x": 159,
+      "y": 425
     },
     {
       "image": "football_helmet_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 5,
-      "y": 559
+      "x": 184,
+      "y": 371
     },
     {
       "image": "football_helmet_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 79,
-      "y": 331
+      "x": 216,
+      "y": 321
     },
     {
       "image": "football_helmet_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 232,
-      "y": 146
+      "x": 254,
+      "y": 275
     },
     {
       "image": "football_helmet_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 442,
-      "y": 31
+      "x": 297,
+      "y": 234
     }
   ]
 }

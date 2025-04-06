@@ -2,155 +2,187 @@
   "base_name": "dumbbell",
   "click_points": [
     [
-      203,
-      1009
+      241,
+      786
     ],
     [
-      434,
-      1008
+      180,
+      735
     ],
     [
-      703,
-      1016
+      311,
+      574
     ],
     [
-      1264,
-      1005
+      367,
+      753
     ],
     [
-      1530,
-      1018
+      517,
+      794
+    ],
+    [
+      774,
+      780
+    ],
+    [
+      804,
+      558
+    ],
+    [
+      866,
+      570
+    ],
+    [
+      909,
+      739
+    ],
+    [
+      1020,
+      767
+    ],
+    [
+      1100,
+      792
+    ],
+    [
+      63,
+      790
+    ],
+    [
+      1129,
+      780
     ]
   ],
-  "circle_radius": 629,
+  "circle_radius": 314,
   "dots": [
     {
       "image": "dumbbell_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1409,
-      "y": 956
+      "x": 911,
+      "y": 639
     },
     {
       "image": "dumbbell_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1384,
-      "y": 1031
+      "x": 891,
+      "y": 715
     },
     {
       "image": "dumbbell_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1351,
-      "y": 1103
+      "x": 854,
+      "y": 784
     },
     {
       "image": "dumbbell_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1308,
-      "y": 1169
+      "x": 800,
+      "y": 841
     },
     {
       "image": "dumbbell_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1258,
-      "y": 1230
+      "x": 399,
+      "y": 841
     },
     {
       "image": "dumbbell_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1200,
-      "y": 1284
+      "x": 345,
+      "y": 784
     },
     {
       "image": "dumbbell_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1137,
-      "y": 1331
+      "x": 308,
+      "y": 715
     },
     {
       "image": "dumbbell_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1067,
-      "y": 1369
+      "x": 288,
+      "y": 639
     },
     {
       "image": "dumbbell_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1429,
-      "y": 800
+      "x": 697,
+      "y": 898
     },
     {
       "image": "dumbbell_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 760,
-      "y": 1427
+      "x": 580,
+      "y": 913
     },
     {
       "image": "dumbbell_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 171,
-      "y": 799
+      "x": 324,
+      "y": 448
     },
     {
       "image": "dumbbell_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 215,
-      "y": 568
+      "x": 399,
+      "y": 358
     },
     {
       "image": "dumbbell_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 341,
-      "y": 369
+      "x": 502,
+      "y": 301
     },
     {
       "image": "dumbbell_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 532,
-      "y": 230
+      "x": 619,
+      "y": 286
     },
     {
       "image": "dumbbell_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 760,
-      "y": 172
+      "x": 733,
+      "y": 315
     },
     {
       "image": "dumbbell_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 994,
-      "y": 201
+      "x": 828,
+      "y": 385
     }
   ]
 }

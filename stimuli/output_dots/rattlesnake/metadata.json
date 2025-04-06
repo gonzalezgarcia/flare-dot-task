@@ -2,98 +2,106 @@
   "base_name": "rattlesnake",
   "click_points": [
     [
-      666,
-      191
+      250,
+      728
     ],
     [
-      393,
-      345
+      422,
+      618
     ],
     [
-      233,
-      723
+      324,
+      297
     ],
     [
-      647,
-      577
+      669,
+      182
     ],
     [
-      633,
-      759
+      652,
+      476
+    ],
+    [
+      802,
+      774
+    ],
+    [
+      533,
+      800
     ]
   ],
-  "circle_radius": 383,
+  "circle_radius": 424,
   "dots": [
     {
       "image": "rattlesnake_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 956,
-      "y": 740
+      "x": 994,
+      "y": 756
     },
     {
       "image": "rattlesnake_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 935,
-      "y": 784
+      "x": 290,
+      "y": 890
     },
     {
       "image": "rattlesnake_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 320,
-      "y": 862
+      "x": 228,
+      "y": 804
     },
     {
       "image": "rattlesnake_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 290,
-      "y": 825
+      "x": 189,
+      "y": 705
     },
     {
       "image": "rattlesnake_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 264,
-      "y": 784
+      "x": 290,
+      "y": 309
     },
     {
       "image": "rattlesnake_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 243,
-      "y": 740
+      "x": 468,
+      "y": 196
     },
     {
       "image": "rattlesnake_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 229,
-      "y": 695
+      "x": 573,
+      "y": 176
     },
     {
       "image": "rattlesnake_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 220,
-      "y": 648
+      "x": 679,
+      "y": 183
     },
     {
       "image": "rattlesnake_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 983,
+      "x": 1024,
       "y": 600
     },
     {
@@ -101,56 +109,56 @@
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 844,
-      "y": 895
+      "x": 870,
+      "y": 926
     },
     {
       "image": "rattlesnake_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 763,
-      "y": 946
+      "x": 731,
+      "y": 1003
     },
     {
       "image": "rattlesnake_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 671,
-      "y": 976
+      "x": 573,
+      "y": 1023
     },
     {
       "image": "rattlesnake_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 575,
-      "y": 982
+      "x": 419,
+      "y": 983
     },
     {
       "image": "rattlesnake_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 481,
-      "y": 964
+      "x": 205,
+      "y": 443
     },
     {
       "image": "rattlesnake_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 229,
-      "y": 504
+      "x": 870,
+      "y": 273
     },
     {
       "image": "rattlesnake_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 264,
-      "y": 415
+      "x": 971,
+      "y": 395
     }
   ]
 }

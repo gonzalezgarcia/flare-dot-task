@@ -11,6 +11,7 @@ args = parser.parse_args()
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(curr_dir)
 
+imgs_dir = '../stimuli'
 original_dir = '../stimuli/original'
 gray_dir = '../stimuli/gray'
 mooney_dir = '../stimuli/mooney'
@@ -20,22 +21,31 @@ sam_checkpoint = '../models/sam_vit_h_4b8939.pth'
 model_type = "vit_h"
 
 dot_color = (0, 0, 255)
-dot_radius = 15
+dot_radius = 25
 num_dots = 8  # means 6 for mooney (previously 6 for gray as well. not anymore)
 sampling_points = 50
 circle_radius_ratio = 0.5
 
 os.makedirs(output_dir, exist_ok=True)
 
-# get name of images in gray_dir
-image_files = sorted([f for f in os.listdir(gray_dir) if f.endswith('.jpg')])
+# get name of images from image_files.txt in ../stimuli
+image_files_path = os.path.join(imgs_dir, 'image_files.txt')
+with open(image_files_path, 'r') as f:
+    image_files = f.read().splitlines()
+    # remove _gray from image_files
+    image_files = [f.replace('_gray', '') for f in image_files]
+    # add .jpg to image_files
+image_files = [f"{f}.jpg" for f in image_files]
 
-# remove .jpg from image_files
-image_files = [os.path.splitext(f)[0] for f in image_files]
-# save image_files to a text file
-with open(os.path.join(output_dir, 'image_files.txt'), 'w') as f:
-    for item in image_files:
-        f.write("%s\n" % item)
+# # get name of images in gray_dir
+# image_files = sorted([f for f in os.listdir(gray_dir) if f.endswith('.jpg')])
+
+# # remove .jpg from image_files
+# image_files = [os.path.splitext(f)[0] for f in image_files]
+# # save image_files to a text file
+# with open(os.path.join(output_dir, 'image_files.txt'), 'w') as f:
+#     for item in image_files:
+#         f.write("%s\n" % item)
         
         
 
@@ -98,6 +108,7 @@ def save_dot_versions(base_img, positions, label, tag, base_name, save_folder, g
             out_img = cv2.cvtColor(cv2.cvtColor(base_img, cv2.COLOR_BGR2GRAY), cv2.COLOR_GRAY2BGR)
         else:
             out_img = base_img.copy()
+        
         cv2.circle(out_img, (x, y), dot_radius, dot_color, thickness=-1)
         fname = f"{base_name}_{tag}_dot_{label}{i}.jpg"
         path = os.path.join(save_folder, fname)
@@ -119,7 +130,7 @@ if not os.path.exists(master_csv):
         writer.writeheader()
 
 # %% Main loop
-image_files = sorted([f for f in os.listdir(original_dir) if f.endswith('.jpg')])
+#image_files = sorted([f for f in os.listdir(original_dir) if f.endswith('.jpg')])
 print(f"Found {len(image_files)} images.\n")
 
 for image_file in image_files:
@@ -137,6 +148,13 @@ for image_file in image_files:
     original_img = cv2.imread(os.path.join(original_dir, image_file))
     gray_img = cv2.imread(os.path.join(gray_dir, f"{base_name}_gray.jpg"))
     mooney_img = cv2.imread(os.path.join(mooney_dir, f"{base_name}_mooney.jpg"))
+    
+    # ensure all images have same resolution at the beginning (1000 x 1000)
+    resolution = (1200, 1200)
+    original_img = cv2.resize(original_img, resolution)
+    gray_img = cv2.resize(gray_img, resolution)
+    mooney_img = cv2.resize(mooney_img, resolution)
+    
 
     if original_img is None or gray_img is None or mooney_img is None:
         print(f"⚠️ Missing images for {base_name}, skipping.")
@@ -202,7 +220,7 @@ for image_file in image_files:
         circle_pos = generate_circle_positions(center, test_radius, sampling_points)
         on_temp, off_temp = classify_positions(circle_pos, combined_mask)
 
-        edge_margin = dot_radius + 25
+        edge_margin = dot_radius + 5
         print(f"\n🔹 Circle radius = {test_radius}px")
         print(f"Original ON: {len(on_temp)}, OFF: {len(off_temp)}")
         
@@ -219,46 +237,46 @@ for image_file in image_files:
         except:
             return None, None, circle_filtered, test_radius
 
-    try:
-        edge_margin = dot_radius + 25
-        on_all = filter_near_mask_edges(on_all, combined_mask, min_distance=edge_margin)
-        off_all = filter_away_from_object(off_all, combined_mask, min_distance=edge_margin)
+    # try:
+    #     edge_margin = dot_radius + 5
+    #     on_all = filter_near_mask_edges(on_all, combined_mask, min_distance=edge_margin)
+    #     off_all = filter_away_from_object(off_all, combined_mask, min_distance=edge_margin)
 
-        on_all_ext = pick_evenly_spaced(on_all, num_dots)
-        off_all_ext = pick_evenly_spaced(off_all, num_dots)
+    #     on_all_ext = pick_evenly_spaced(on_all, num_dots)
+    #     off_all_ext = pick_evenly_spaced(off_all, num_dots)
 
-    except ValueError:
-        print("⚠️ Not enough dot positions. Use the slider to adjust radius.")
-        fig, ax = plt.subplots(figsize=(8, 8))
-        plt.subplots_adjust(bottom=0.25)
-        slider_ax = plt.axes([0.2, 0.1, 0.6, 0.03])
-        radius_slider = Slider(slider_ax, 'Radius %', 0.1, 0.9, valinit=circle_radius_ratio)
-        img_display = ax.imshow(rgb_img)
+    # except ValueError:
+    print("⚠️ Not enough dot positions. Use the slider to adjust radius.")
+    fig, ax = plt.subplots(figsize=(8, 8))
+    plt.subplots_adjust(bottom=0.25)
+    slider_ax = plt.axes([0.2, 0.1, 0.6, 0.03])
+    radius_slider = Slider(slider_ax, 'Radius %', 0.1, 0.9, valinit=circle_radius_ratio)
+    img_display = ax.imshow(rgb_img)
 
-        def update(val):
-            on_ext, off_ext, circle_pos_filtered, updated_r = attempt_dot_pick(val)
-            if on_ext and off_ext:
-                preview = draw_dots_and_circle(rgb_img, on_ext[:num_dots], circle_pos_filtered, center, updated_r, dot_color, dot_radius)
-                
-                # 🔍 Optional: draw yellow dots to preview all valid filtered positions
-                for x, y in circle_pos_filtered:
-                    cv2.circle(preview, (x, y), 3, (0, 255, 255), -1)
+    def update(val):
+        on_ext, off_ext, circle_pos_filtered, updated_r = attempt_dot_pick(val)
+        if on_ext and off_ext:
+            preview = draw_dots_and_circle(rgb_img, on_ext[:num_dots], circle_pos_filtered, center, updated_r, dot_color, dot_radius)
+            
+            # 🔍 Optional: draw yellow dots to preview all valid filtered positions
+            for x, y in circle_pos_filtered:
+                cv2.circle(preview, (x, y), 3, (0, 255, 255), -1)
 
-                img_display.set_data(preview)
-                fig.canvas.draw_idle()
+            img_display.set_data(preview)
+            fig.canvas.draw_idle()
 
 
-        radius_slider.on_changed(update)
-        update(circle_radius_ratio)
-        plt.title("Adjust radius until valid dot layout appears. Then close.")
-        plt.show()
+    radius_slider.on_changed(update)
+    update(circle_radius_ratio)
+    plt.title("Adjust radius until valid dot layout appears. Then close.")
+    plt.show()
 
-        final_r = radius_slider.val
-        on_all_ext, off_all_ext, circle_positions, radius = attempt_dot_pick(final_r)
+    final_r = radius_slider.val
+    on_all_ext, off_all_ext, circle_positions, radius = attempt_dot_pick(final_r)
 
-        if not on_all_ext or not off_all_ext:
-            print("❌ Still not enough points. Skipping.")
-            continue
+    if not on_all_ext or not off_all_ext:
+        print("❌ Still not enough points. Skipping.")
+        continue
 
     # Divide into Mooney and Gray
     on_mooney = on_all_ext #[::2]

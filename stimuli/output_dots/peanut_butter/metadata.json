@@ -2,159 +2,183 @@
   "base_name": "peanut_butter",
   "click_points": [
     [
-      930,
-      755
+      219,
+      1059
     ],
     [
-      480,
-      937
+      252,
+      918
     ],
     [
-      347,
-      1308
+      640,
+      911
     ],
     [
-      890,
-      1177
+      706,
+      655
     ],
     [
-      1285,
-      1394
+      745,
+      505
     ],
     [
-      387,
-      1439
+      969,
+      517
+    ],
+    [
+      1031,
+      852
+    ],
+    [
+      1152,
+      1047
+    ],
+    [
+      757,
+      1070
+    ],
+    [
+      280,
+      677
+    ],
+    [
+      357,
+      753
+    ],
+    [
+      305,
+      817
     ]
   ],
-  "circle_radius": 800,
+  "circle_radius": 414,
   "dots": [
     {
       "image": "peanut_butter_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1501,
-      "y": 1185
+      "x": 1014,
+      "y": 600
     },
     {
       "image": "peanut_butter_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1383,
-      "y": 1347
+      "x": 962,
+      "y": 799
     },
     {
       "image": "peanut_butter_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1228,
-      "y": 1475
+      "x": 863,
+      "y": 918
     },
     {
       "image": "peanut_butter_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1047,
-      "y": 1560
+      "x": 727,
+      "y": 993
     },
     {
       "image": "peanut_butter_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 850,
-      "y": 1598
+      "x": 574,
+      "y": 1013
     },
     {
       "image": "peanut_butter_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 650,
-      "y": 1585
+      "x": 423,
+      "y": 974
     },
     {
       "image": "peanut_butter_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 459,
-      "y": 1523
+      "x": 298,
+      "y": 883
     },
     {
       "image": "peanut_butter_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 290,
-      "y": 1416
+      "x": 189,
+      "y": 651
     },
     {
       "image": "peanut_butter_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1593,
-      "y": 900
+      "x": 237,
+      "y": 400
     },
     {
       "image": "peanut_butter_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 56,
-      "y": 1094
+      "x": 298,
+      "y": 316
     },
     {
       "image": "peanut_butter_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 0,
-      "y": 799
+      "x": 378,
+      "y": 250
     },
     {
       "image": "peanut_butter_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 152,
-      "y": 329
+      "x": 472,
+      "y": 206
     },
     {
       "image": "peanut_butter_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 371,
-      "y": 124
+      "x": 574,
+      "y": 186
     },
     {
       "image": "peanut_butter_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 650,
-      "y": 14
+      "x": 677,
+      "y": 193
     },
     {
       "image": "peanut_butter_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 949,
-      "y": 14
+      "x": 776,
+      "y": 225
     },
     {
       "image": "peanut_butter_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1228,
-      "y": 124
+      "x": 863,
+      "y": 281
     }
   ]
 }

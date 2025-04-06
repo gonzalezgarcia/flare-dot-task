@@ -2,155 +2,179 @@
   "base_name": "gargoyle",
   "click_points": [
     [
-      456,
-      1469
+      215,
+      330
     ],
     [
-      395,
-      1324
+      120,
+      617
     ],
     [
-      364,
-      505
+      496,
+      609
     ],
     [
-      1317,
-      726
+      385,
+      330
     ],
     [
-      678,
-      770
+      708,
+      550
+    ],
+    [
+      959,
+      556
+    ],
+    [
+      1051,
+      626
+    ],
+    [
+      580,
+      825
+    ],
+    [
+      385,
+      920
+    ],
+    [
+      340,
+      907
+    ],
+    [
+      309,
+      735
     ]
   ],
-  "circle_radius": 704,
+  "circle_radius": 470,
   "dots": [
     {
       "image": "gargoyle_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1504,
-      "y": 800
+      "x": 1070,
+      "y": 600
     },
     {
       "image": "gargoyle_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1498,
-      "y": 888
+      "x": 1066,
+      "y": 658
     },
     {
       "image": "gargoyle_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 500,
-      "y": 1436
+      "x": 300,
+      "y": 962
     },
     {
       "image": "gargoyle_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 286,
-      "y": 1281
+      "x": 163,
+      "y": 426
     },
     {
       "image": "gargoyle_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 183,
-      "y": 460
+      "x": 188,
+      "y": 373
     },
     {
       "image": "gargoyle_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 230,
-      "y": 386
+      "x": 219,
+      "y": 323
     },
     {
       "image": "gargoyle_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 286,
-      "y": 318
+      "x": 257,
+      "y": 278
     },
     {
       "image": "gargoyle_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 351,
-      "y": 257
+      "x": 300,
+      "y": 237
     },
     {
       "image": "gargoyle_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1454,
-      "y": 1059
+      "x": 1036,
+      "y": 773
     },
     {
       "image": "gargoyle_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1313,
-      "y": 1281
+      "x": 942,
+      "y": 921
     },
     {
       "image": "gargoyle_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1099,
-      "y": 1436
+      "x": 800,
+      "y": 1025
     },
     {
       "image": "gargoyle_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 844,
-      "y": 1502
+      "x": 629,
+      "y": 1069
     },
     {
       "image": "gargoyle_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 145,
-      "y": 1059
+      "x": 454,
+      "y": 1046
     },
     {
       "image": "gargoyle_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 668,
-      "y": 108
+      "x": 511,
+      "y": 138
     },
     {
       "image": "gargoyle_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 931,
-      "y": 108
+      "x": 688,
+      "y": 138
     },
     {
       "image": "gargoyle_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1177,
-      "y": 205
+      "x": 851,
+      "y": 203
     }
   ]
 }

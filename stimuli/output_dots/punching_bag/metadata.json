@@ -2,151 +2,159 @@
   "base_name": "punching_bag",
   "click_points": [
     [
-      330,
-      457
+      488,
+      954
     ],
     [
-      319,
-      202
+      470,
+      570
     ],
     [
-      370,
-      341
+      537,
+      428
     ],
     [
-      358,
-      166
+      609,
+      605
+    ],
+    [
+      580,
+      930
+    ],
+    [
+      539,
+      289
     ]
   ],
-  "circle_radius": 221,
+  "circle_radius": 328,
   "dots": [
     {
       "image": "punching_bag_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 388,
-      "y": 595
+      "x": 661,
+      "y": 922
     },
     {
       "image": "punching_bag_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 361,
-      "y": 595
+      "x": 620,
+      "y": 927
     },
     {
       "image": "punching_bag_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 333,
-      "y": 592
+      "x": 579,
+      "y": 927
     },
     {
       "image": "punching_bag_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 306,
-      "y": 585
+      "x": 538,
+      "y": 922
     },
     {
       "image": "punching_bag_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 280,
-      "y": 574
+      "x": 498,
+      "y": 911
     },
     {
       "image": "punching_bag_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 280,
-      "y": 175
+      "x": 460,
+      "y": 896
     },
     {
       "image": "punching_bag_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 306,
-      "y": 164
+      "x": 424,
+      "y": 876
     },
     {
       "image": "punching_bag_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 333,
-      "y": 157
+      "x": 390,
+      "y": 347
     },
     {
       "image": "punching_bag_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 596,
-      "y": 375
+      "x": 928,
+      "y": 600
     },
     {
       "image": "punching_bag_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 580,
-      "y": 456
+      "x": 904,
+      "y": 720
     },
     {
       "image": "punching_bag_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 536,
-      "y": 526
+      "x": 839,
+      "y": 824
     },
     {
       "image": "punching_bag_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 181,
-      "y": 481
+      "x": 739,
+      "y": 896
     },
     {
       "image": "punching_bag_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 155,
-      "y": 402
+      "x": 282,
+      "y": 681
     },
     {
       "image": "punching_bag_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 160,
-      "y": 320
+      "x": 274,
+      "y": 558
     },
     {
       "image": "punching_bag_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 493,
-      "y": 188
+      "x": 312,
+      "y": 441
     },
     {
       "image": "punching_bag_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 553,
-      "y": 245
+      "x": 809,
+      "y": 347
     }
   ]
 }

@@ -2,147 +2,171 @@
   "base_name": "pomegranate",
   "click_points": [
     [
-      470,
-      1034
+      147,
+      942
     ],
     [
-      967,
-      865
+      141,
+      722
     ],
     [
-      1042,
-      525
+      159,
+      636
+    ],
+    [
+      340,
+      710
+    ],
+    [
+      365,
+      860
+    ],
+    [
+      718,
+      437
+    ],
+    [
+      860,
+      221
+    ],
+    [
+      1000,
+      398
+    ],
+    [
+      915,
+      693
     ]
   ],
-  "circle_radius": 800,
+  "circle_radius": 408,
   "dots": [
     {
       "image": "pomegranate_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1593,
-      "y": 900
+      "x": 1008,
+      "y": 600
     },
     {
       "image": "pomegranate_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1543,
-      "y": 1094
+      "x": 979,
+      "y": 750
     },
     {
       "image": "pomegranate_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1447,
-      "y": 1270
+      "x": 897,
+      "y": 879
     },
     {
       "image": "pomegranate_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 152,
-      "y": 1270
+      "x": 426,
+      "y": 969
     },
     {
       "image": "pomegranate_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1228,
-      "y": 124
+      "x": 302,
+      "y": 879
     },
     {
       "image": "pomegranate_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1383,
-      "y": 252
+      "x": 220,
+      "y": 750
     },
     {
       "image": "pomegranate_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1501,
-      "y": 414
+      "x": 676,
+      "y": 199
     },
     {
       "image": "pomegranate_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1574,
-      "y": 601
+      "x": 818,
+      "y": 255
     },
     {
       "image": "pomegranate_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1309,
-      "y": 1416
+      "x": 676,
+      "y": 1000
     },
     {
       "image": "pomegranate_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1047,
-      "y": 1560
+      "x": 625,
+      "y": 1007
     },
     {
       "image": "pomegranate_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 749,
-      "y": 1598
+      "x": 574,
+      "y": 1007
     },
     {
       "image": "pomegranate_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 459,
-      "y": 1523
+      "x": 523,
+      "y": 1000
     },
     {
       "image": "pomegranate_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 25,
-      "y": 601
+      "x": 204,
+      "y": 498
     },
     {
       "image": "pomegranate_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 152,
-      "y": 329
+      "x": 220,
+      "y": 449
     },
     {
       "image": "pomegranate_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 371,
-      "y": 124
+      "x": 242,
+      "y": 403
     },
     {
       "image": "pomegranate_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 650,
-      "y": 14
+      "x": 269,
+      "y": 360
     }
   ]
 }

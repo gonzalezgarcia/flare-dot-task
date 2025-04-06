@@ -34,3 +34,4 @@ for file_name in os.listdir(gray_folder):
         original_file_path = os.path.join(mooney_source, object_label)
         if os.path.exists(original_file_path):
             shutil.copy(original_file_path, mooney_folder)
+

@@ -2,159 +2,159 @@
   "base_name": "gutter",
   "click_points": [
     [
-      768,
-      1016
+      509,
+      646
     ],
     [
-      776,
-      1290
+      665,
+      391
     ],
     [
-      209,
-      1542
+      691,
+      237
     ],
     [
-      685,
-      578
+      572,
+      856
     ],
     [
-      943,
-      350
+      531,
+      1061
     ],
     [
-      1015,
-      529
+      326,
+      1160
     ]
   ],
-  "circle_radius": 470,
+  "circle_radius": 358,
   "dots": [
     {
       "image": "gutter_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 829,
-      "y": 1269
+      "x": 622,
+      "y": 957
     },
     {
       "image": "gutter_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 770,
-      "y": 1269
+      "x": 577,
+      "y": 957
     },
     {
       "image": "gutter_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 711,
-      "y": 1261
+      "x": 532,
+      "y": 951
     },
     {
       "image": "gutter_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 654,
-      "y": 1246
+      "x": 489,
+      "y": 940
     },
     {
       "image": "gutter_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 888,
-      "y": 338
+      "x": 667,
+      "y": 248
     },
     {
       "image": "gutter_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 945,
-      "y": 353
+      "x": 710,
+      "y": 259
     },
     {
       "image": "gutter_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1000,
-      "y": 374
+      "x": 752,
+      "y": 276
     },
     {
       "image": "gutter_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1051,
-      "y": 403
+      "x": 791,
+      "y": 297
     },
     {
       "image": "gutter_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1270,
-      "y": 800
+      "x": 958,
+      "y": 600
     },
     {
       "image": "gutter_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1211,
-      "y": 1026
+      "x": 913,
+      "y": 772
     },
     {
       "image": "gutter_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1051,
-      "y": 1196
+      "x": 791,
+      "y": 902
     },
     {
       "image": "gutter_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 457,
-      "y": 1121
+      "x": 339,
+      "y": 845
     },
     {
       "image": "gutter_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 344,
-      "y": 916
+      "x": 253,
+      "y": 689
     },
     {
       "image": "gutter_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 344,
-      "y": 683
+      "x": 253,
+      "y": 510
     },
     {
       "image": "gutter_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 457,
-      "y": 478
+      "x": 339,
+      "y": 354
     },
     {
       "image": "gutter_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 654,
-      "y": 353
+      "x": 489,
+      "y": 259
     }
   ]
 }

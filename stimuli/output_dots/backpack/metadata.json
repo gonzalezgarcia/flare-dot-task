@@ -2,171 +2,183 @@
   "base_name": "backpack",
   "click_points": [
     [
-      336,
-      783
+      299,
+      659
     ],
     [
-      670,
-      723
+      295,
+      770
     ],
     [
-      926,
-      745
+      373,
+      922
     ],
     [
-      194,
-      938
+      691,
+      833
     ],
     [
-      80,
-      803
+      893,
+      718
     ],
     [
-      285,
-      510
+      788,
+      318
     ],
     [
-      344,
-      250
-    ],
-    [
-      506,
-      164
-    ],
-    [
-      708,
+      661,
       209
+    ],
+    [
+      574,
+      139
+    ],
+    [
+      622,
+      75
+    ],
+    [
+      209,
+      768
+    ],
+    [
+      235,
+      965
+    ],
+    [
+      1055,
+      804
     ]
   ],
-  "circle_radius": 410,
+  "circle_radius": 460,
   "dots": [
     {
       "image": "backpack_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 899,
-      "y": 737
+      "x": 1027,
+      "y": 769
     },
     {
       "image": "backpack_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 871,
-      "y": 780
+      "x": 972,
+      "y": 870
     },
     {
       "image": "backpack_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 241,
-      "y": 820
+      "x": 353,
+      "y": 211
     },
     {
       "image": "backpack_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 320,
-      "y": 193
+      "x": 404,
+      "y": 183
     },
     {
       "image": "backpack_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 365,
-      "y": 169
+      "x": 457,
+      "y": 162
     },
     {
       "image": "backpack_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 413,
-      "y": 150
+      "x": 513,
+      "y": 148
     },
     {
       "image": "backpack_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 463,
-      "y": 137
+      "x": 571,
+      "y": 140
     },
     {
       "image": "backpack_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 514,
-      "y": 130
+      "x": 628,
+      "y": 140
     },
     {
       "image": "backpack_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 950,
-      "y": 540
+      "x": 1060,
+      "y": 600
     },
     {
       "image": "backpack_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 666,
-      "y": 929
+      "x": 795,
+      "y": 1016
     },
     {
       "image": "backpack_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 565,
-      "y": 949
+      "x": 686,
+      "y": 1051
     },
     {
       "image": "backpack_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 133,
-      "y": 591
+      "x": 571,
+      "y": 1059
     },
     {
       "image": "backpack_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 133,
-      "y": 488
+      "x": 457,
+      "y": 1037
     },
     {
       "image": "backpack_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 158,
-      "y": 389
+      "x": 140,
+      "y": 599
     },
     {
       "image": "backpack_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 801,
-      "y": 224
+      "x": 154,
+      "y": 485
     },
     {
       "image": "backpack_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 871,
-      "y": 299
+      "x": 196,
+      "y": 378
     }
   ]
 }

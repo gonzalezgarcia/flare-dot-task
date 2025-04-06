@@ -2,163 +2,171 @@
   "base_name": "pedal",
   "click_points": [
     [
-      164,
-      1046
+      297,
+      755
     ],
     [
-      495,
-      713
+      355,
+      519
     ],
     [
-      330,
-      374
+      287,
+      324
     ],
     [
-      961,
-      354
+      89,
+      739
     ],
     [
-      1111,
-      789
+      484,
+      283
     ],
     [
-      791,
-      1112
+      613,
+      552
     ],
     [
-      1418,
-      761
+      689,
+      848
+    ],
+    [
+      928,
+      628
+    ],
+    [
+      1109,
+      556
     ]
   ],
-  "circle_radius": 549,
+  "circle_radius": 410,
   "dots": [
     {
       "image": "pedal_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1349,
-      "y": 800
+      "x": 1010,
+      "y": 600
     },
     {
       "image": "pedal_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1344,
-      "y": 868
+      "x": 1006,
+      "y": 651
     },
     {
       "image": "pedal_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 318,
-      "y": 1064
+      "x": 240,
+      "y": 797
     },
     {
       "image": "pedal_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 450,
-      "y": 376
+      "x": 338,
+      "y": 284
     },
     {
       "image": "pedal_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 566,
-      "y": 303
+      "x": 425,
+      "y": 229
     },
     {
       "image": "pedal_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1094,
-      "y": 336
+      "x": 774,
+      "y": 229
     },
     {
       "image": "pedal_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1149,
-      "y": 376
+      "x": 819,
+      "y": 253
     },
     {
       "image": "pedal_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1200,
-      "y": 424
+      "x": 861,
+      "y": 284
     },
     {
       "image": "pedal_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 969,
-      "y": 1322
+      "x": 726,
+      "y": 989
     },
     {
       "image": "pedal_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 902,
-      "y": 1339
+      "x": 676,
+      "y": 1002
     },
     {
       "image": "pedal_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 834,
-      "y": 1347
+      "x": 625,
+      "y": 1009
     },
     {
       "image": "pedal_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 765,
-      "y": 1347
+      "x": 574,
+      "y": 1009
     },
     {
       "image": "pedal_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 697,
-      "y": 1339
+      "x": 523,
+      "y": 1002
     },
     {
       "image": "pedal_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 630,
-      "y": 1322
+      "x": 473,
+      "y": 989
     },
     {
       "image": "pedal_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 566,
-      "y": 1296
+      "x": 425,
+      "y": 970
     },
     {
       "image": "pedal_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 268,
-      "y": 936
+      "x": 202,
+      "y": 701
     }
   ]
 }

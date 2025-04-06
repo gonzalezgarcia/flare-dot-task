@@ -2,155 +2,159 @@
   "base_name": "buoy",
   "click_points": [
     [
-      716,
-      835
+      531,
+      609
     ],
     [
-      695,
-      733
+      572,
+      539
     ],
     [
-      874,
-      663
+      728,
+      546
     ],
     [
-      1004,
-      822
+      751,
+      595
     ],
     [
-      1134,
-      861
+      876,
+      646
+    ],
+    [
+      202,
+      581
     ]
   ],
-  "circle_radius": 214,
+  "circle_radius": 166,
   "dots": [
     {
       "image": "buoy_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1014,
-      "y": 800
+      "x": 766,
+      "y": 600
     },
     {
       "image": "buoy_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1012,
-      "y": 826
+      "x": 764,
+      "y": 620
     },
     {
       "image": "buoy_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1007,
-      "y": 853
+      "x": 760,
+      "y": 641
     },
     {
       "image": "buoy_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 998,
-      "y": 878
+      "x": 754,
+      "y": 661
     },
     {
       "image": "buoy_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 987,
-      "y": 696
+      "x": 745,
+      "y": 520
     },
     {
       "image": "buoy_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 998,
-      "y": 721
+      "x": 754,
+      "y": 538
     },
     {
       "image": "buoy_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1007,
-      "y": 746
+      "x": 760,
+      "y": 558
     },
     {
       "image": "buoy_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1012,
-      "y": 773
+      "x": 764,
+      "y": 579
     },
     {
       "image": "buoy_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 914,
-      "y": 980
+      "x": 705,
+      "y": 727
     },
     {
       "image": "buoy_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 891,
-      "y": 993
+      "x": 688,
+      "y": 740
     },
     {
       "image": "buoy_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 866,
-      "y": 1003
+      "x": 670,
+      "y": 750
     },
     {
       "image": "buoy_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 840,
-      "y": 1010
+      "x": 651,
+      "y": 757
     },
     {
       "image": "buoy_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 813,
-      "y": 1013
+      "x": 631,
+      "y": 763
     },
     {
       "image": "buoy_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 786,
-      "y": 1013
+      "x": 610,
+      "y": 765
     },
     {
       "image": "buoy_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 759,
-      "y": 1010
+      "x": 589,
+      "y": 765
     },
     {
       "image": "buoy_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 733,
-      "y": 1003
+      "x": 568,
+      "y": 763
     }
   ]
 }

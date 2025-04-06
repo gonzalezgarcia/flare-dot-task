@@ -11,7 +11,7 @@ VERBOSE_LEVEL = "summary"  # Options: "full", "summary", "none"
 optimization_attemps = 200  # Number of attempts to optimize the design
 unambiguous_image = "color" # either color or gray
 
-n_subjects = 50  # Number of subjects to generate designs for
+n_subjects = 100  # Number of subjects to generate designs for
 
 stimulus_manipulations = ["regular", "upside_down", "horizontal_flip"]
 dot_trials_per_image = 4
@@ -23,9 +23,10 @@ blocks_total = n_target_sets + 1  # final block is dot-only
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(curr_dir)
 
+image_path = curr_dir + "/../stimuli/image_files.txt"
 
 # === LOAD IMAGE LABELS ===
-def load_usable_labels(filepath="image_files.txt"):
+def load_usable_labels(filepath=image_path):
     with open(filepath, "r") as f:
         gray_images = [line.strip() for line in f if line.strip()]
     return [name.replace("_gray", "") for name in gray_images if name.endswith("_gray")]
@@ -148,7 +149,7 @@ def generate_recognition_trials(pre_imgs, post_imgs, image_info, block):
 
 
 # === SESSION BUILDER ===
-def generate_full_session(filepath="image_files.txt", verbose=False):
+def generate_full_session(filepath=image_path, verbose=False):
     labels = load_usable_labels(filepath)
     target_sets, catch_sets = create_image_sets(labels)
     image_info = assign_manipulations(target_sets, catch_sets)
@@ -390,7 +391,7 @@ def validate_constraints(df, verbose=True):
 MAX_RETRIES = 10  # just in case
 
 if __name__ == "__main__":
-    df = generate_full_session("image_files.txt")
+    df = generate_full_session(image_path)
     
     for attempt in range(1, MAX_RETRIES + 1):
         print(f"\n⚙️ Attempt {attempt}: optimizing trial order...")
@@ -412,7 +413,7 @@ if __name__ == "__main__":
 def run_subject(subject_id, MAX_RETRIES=10):
     print(f" \n\n")
     print(f"🧠 Starting: Subject {subject_id}!")
-    df = generate_full_session("image_files.txt")
+    df = generate_full_session(image_path)
     df["subject"] = subject_id
 
     for attempt in range(MAX_RETRIES):

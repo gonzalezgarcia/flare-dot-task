@@ -2,151 +2,167 @@
   "base_name": "figurine",
   "click_points": [
     [
-      370,
-      548
+      215,
+      763
     ],
     [
-      256,
-      1180
+      235,
+      486
     ],
     [
-      1054,
-      512
+      324,
+      258
     ],
     [
-      1134,
-      917
+      765,
+      402
+    ],
+    [
+      833,
+      636
+    ],
+    [
+      928,
+      844
+    ],
+    [
+      611,
+      1045
+    ],
+    [
+      430,
+      1014
     ]
   ],
-  "circle_radius": 800,
+  "circle_radius": 482,
   "dots": [
     {
       "image": "figurine_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1501,
-      "y": 1185
+      "x": 1048,
+      "y": 777
     },
     {
       "image": "figurine_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1383,
-      "y": 1347
+      "x": 951,
+      "y": 929
     },
     {
       "image": "figurine_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1228,
-      "y": 1475
+      "x": 451,
+      "y": 1058
     },
     {
       "image": "figurine_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 850,
-      "y": 1598
+      "x": 292,
+      "y": 971
     },
     {
       "image": "figurine_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 552,
-      "y": 1560
+      "x": 177,
+      "y": 832
     },
     {
       "image": "figurine_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 371,
-      "y": 1475
+      "x": 121,
+      "y": 660
     },
     {
       "image": "figurine_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 216,
-      "y": 1347
+      "x": 151,
+      "y": 422
     },
     {
       "image": "figurine_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 98,
-      "y": 1185
+      "x": 248,
+      "y": 270
     },
     {
       "image": "figurine_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1593,
-      "y": 900
+      "x": 1082,
+      "y": 600
     },
     {
       "image": "figurine_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 6,
-      "y": 900
+      "x": 748,
+      "y": 1058
     },
     {
       "image": "figurine_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 552,
-      "y": 39
+      "x": 509,
+      "y": 126
     },
     {
       "image": "figurine_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 749,
-      "y": 1
+      "x": 569,
+      "y": 118
     },
     {
       "image": "figurine_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 949,
-      "y": 14
+      "x": 630,
+      "y": 118
     },
     {
       "image": "figurine_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1140,
-      "y": 76
+      "x": 690,
+      "y": 126
     },
     {
       "image": "figurine_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1309,
-      "y": 183
+      "x": 748,
+      "y": 141
     },
     {
       "image": "figurine_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1447,
-      "y": 329
+      "x": 805,
+      "y": 163
     }
   ]
 }

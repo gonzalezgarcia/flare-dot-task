@@ -2,167 +2,175 @@
   "base_name": "garlic",
   "click_points": [
     [
-      265,
-      1300
+      165,
+      1014
     ],
     [
-      483,
-      856
+      412,
+      609
     ],
     [
-      946,
-      1234
+      661,
+      899
     ],
     [
-      1131,
-      1337
+      848,
+      1010
     ],
     [
-      1281,
-      889
+      1111,
+      977
     ],
     [
-      1008,
-      477
+      975,
+      761
     ],
     [
-      1122,
-      243
+      735,
+      394
     ],
     [
-      1499,
-      1209
+      817,
+      209
+    ],
+    [
+      1115,
+      332
+    ],
+    [
+      655,
+      1082
     ]
   ],
-  "circle_radius": 738,
+  "circle_radius": 538,
   "dots": [
     {
       "image": "garlic_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1538,
-      "y": 800
+      "x": 1138,
+      "y": 600
     },
     {
       "image": "garlic_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1532,
-      "y": 892
+      "x": 1133,
+      "y": 667
     },
     {
       "image": "garlic_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1514,
-      "y": 983
+      "x": 1121,
+      "y": 733
     },
     {
       "image": "garlic_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1486,
-      "y": 1071
+      "x": 1100,
+      "y": 798
     },
     {
       "image": "garlic_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1195,
-      "y": 1423
+      "x": 992,
+      "y": 968
     },
     {
       "image": "garlic_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 329,
-      "y": 1368
+      "x": 888,
+      "y": 1054
     },
     {
       "image": "garlic_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 262,
-      "y": 1305
+      "x": 829,
+      "y": 1086
     },
     {
       "image": "garlic_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1195,
-      "y": 176
+      "x": 257,
+      "y": 1014
     },
     {
       "image": "garlic_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1028,
-      "y": 1501
+      "x": 499,
+      "y": 1128
     },
     {
       "image": "garlic_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 938,
-      "y": 1524
+      "x": 433,
+      "y": 1111
     },
     {
       "image": "garlic_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 661,
-      "y": 1524
+      "x": 370,
+      "y": 1086
     },
     {
       "image": "garlic_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 571,
-      "y": 1501
+      "x": 311,
+      "y": 145
     },
     {
       "image": "garlic_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 485,
-      "y": 1467
+      "x": 370,
+      "y": 113
     },
     {
       "image": "garlic_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 202,
-      "y": 366
+      "x": 433,
+      "y": 88
     },
     {
       "image": "garlic_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 262,
-      "y": 294
+      "x": 992,
+      "y": 231
     },
     {
       "image": "garlic_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 329,
-      "y": 231
+      "x": 1035,
+      "y": 283
     }
   ]
 }

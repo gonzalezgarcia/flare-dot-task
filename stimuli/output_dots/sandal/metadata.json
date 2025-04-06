@@ -2,167 +2,167 @@
   "base_name": "sandal",
   "click_points": [
     [
-      261,
-      1224
+      209,
+      989
     ],
     [
-      380,
-      1103
+      293,
+      844
     ],
     [
-      704,
-      941
+      453,
+      784
     ],
     [
-      622,
-      994
+      546,
+      716
     ],
     [
-      808,
-      605
+      630,
+      478
     ],
     [
-      995,
-      605
+      835,
+      437
     ],
     [
-      1261,
-      605
+      957,
+      445
     ],
     [
-      1450,
-      594
+      1098,
+      463
     ]
   ],
-  "circle_radius": 629,
+  "circle_radius": 400,
   "dots": [
     {
       "image": "sandal_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 462,
-      "y": 1331
+      "x": 429,
+      "y": 961
     },
     {
       "image": "sandal_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 399,
-      "y": 1284
+      "x": 385,
+      "y": 937
     },
     {
       "image": "sandal_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 341,
-      "y": 1230
+      "x": 345,
+      "y": 908
     },
     {
       "image": "sandal_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 291,
-      "y": 1169
+      "x": 308,
+      "y": 873
     },
     {
       "image": "sandal_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 248,
-      "y": 1103
+      "x": 276,
+      "y": 835
     },
     {
       "image": "sandal_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1384,
-      "y": 568
+      "x": 249,
+      "y": 792
     },
     {
       "image": "sandal_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1409,
-      "y": 643
+      "x": 228,
+      "y": 747
     },
     {
       "image": "sandal_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1424,
-      "y": 721
+      "x": 950,
+      "y": 407
     },
     {
       "image": "sandal_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1424,
-      "y": 878
+      "x": 996,
+      "y": 650
     },
     {
       "image": "sandal_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1258,
-      "y": 1230
+      "x": 950,
+      "y": 792
     },
     {
       "image": "sandal_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 917,
-      "y": 1417
+      "x": 854,
+      "y": 908
     },
     {
       "image": "sandal_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 605,
-      "y": 1398
+      "x": 723,
+      "y": 980
     },
     {
       "image": "sandal_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 190,
-      "y": 643
+      "x": 574,
+      "y": 999
     },
     {
       "image": "sandal_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 399,
-      "y": 315
+      "x": 249,
+      "y": 407
     },
     {
       "image": "sandal_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 682,
-      "y": 182
+      "x": 345,
+      "y": 291
     },
     {
       "image": "sandal_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 994,
-      "y": 201
+      "x": 476,
+      "y": 219
     }
   ]
 }

@@ -2,151 +2,175 @@
   "base_name": "sidecar",
   "click_points": [
     [
-      176,
-      824
+      116,
+      665
     ],
     [
-      485,
-      193
+      363,
+      486
     ],
     [
-      951,
-      531
+      408,
+      239
     ],
     [
-      751,
-      793
+      747,
+      309
+    ],
+    [
+      1061,
+      387
+    ],
+    [
+      1010,
+      229
+    ],
+    [
+      718,
+      654
+    ],
+    [
+      583,
+      774
+    ],
+    [
+      837,
+      844
+    ],
+    [
+      1002,
+      811
     ]
   ],
-  "circle_radius": 688,
+  "circle_radius": 482,
   "dots": [
     {
       "image": "sidecar_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 197,
-      "y": 1131
+      "x": 1082,
+      "y": 600
     },
     {
       "image": "sidecar_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 160,
-      "y": 1053
+      "x": 989,
+      "y": 883
     },
     {
       "image": "sidecar_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 133,
-      "y": 971
+      "x": 151,
+      "y": 777
     },
     {
       "image": "sidecar_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 117,
-      "y": 886
+      "x": 121,
+      "y": 660
     },
     {
       "image": "sidecar_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 112,
-      "y": 799
+      "x": 121,
+      "y": 539
     },
     {
       "image": "sidecar_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 117,
-      "y": 713
+      "x": 210,
+      "y": 316
     },
     {
       "image": "sidecar_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 133,
-      "y": 628
+      "x": 292,
+      "y": 228
     },
     {
       "image": "sidecar_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 298,
-      "y": 329
+      "x": 394,
+      "y": 163
     },
     {
       "image": "sidecar_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1488,
-      "y": 800
+      "x": 805,
+      "y": 1036
     },
     {
       "image": "sidecar_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1439,
-      "y": 1053
+      "x": 748,
+      "y": 1058
     },
     {
       "image": "sidecar_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1168,
-      "y": 1380
+      "x": 690,
+      "y": 1073
     },
     {
       "image": "sidecar_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 928,
-      "y": 1475
+      "x": 630,
+      "y": 1081
     },
     {
       "image": "sidecar_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 671,
-      "y": 1475
+      "x": 569,
+      "y": 1081
     },
     {
       "image": "sidecar_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 431,
-      "y": 1380
+      "x": 509,
+      "y": 1073
     },
     {
       "image": "sidecar_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 756,
-      "y": 113
+      "x": 451,
+      "y": 1058
     },
     {
       "image": "sidecar_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1012,
-      "y": 145
+      "x": 394,
+      "y": 1036
     }
   ]
 }

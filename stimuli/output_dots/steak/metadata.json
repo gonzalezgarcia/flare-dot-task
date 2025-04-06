@@ -2,151 +2,171 @@
   "base_name": "steak",
   "click_points": [
     [
-      287,
-      1012
+      182,
+      735
     ],
     [
-      667,
-      742
+      620,
+      544
     ],
     [
-      1148,
-      499
+      899,
+      445
     ],
     [
-      764,
-      783
+      930,
+      330
+    ],
+    [
+      451,
+      505
+    ],
+    [
+      428,
+      726
+    ],
+    [
+      320,
+      843
+    ],
+    [
+      523,
+      796
+    ],
+    [
+      922,
+      636
     ]
   ],
-  "circle_radius": 561,
+  "circle_radius": 336,
   "dots": [
     {
       "image": "steak_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 391,
-      "y": 1184
+      "x": 936,
+      "y": 600
     },
     {
       "image": "steak_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 346,
-      "y": 1129
+      "x": 385,
+      "y": 858
     },
     {
       "image": "steak_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 308,
-      "y": 1070
+      "x": 328,
+      "y": 797
     },
     {
       "image": "steak_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 278,
-      "y": 1006
+      "x": 287,
+      "y": 723
     },
     {
       "image": "steak_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 256,
-      "y": 939
+      "x": 266,
+      "y": 642
     },
     {
       "image": "steak_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 243,
-      "y": 870
+      "x": 266,
+      "y": 557
     },
     {
       "image": "steak_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 1157,
-      "y": 367
+      "x": 814,
+      "y": 341
     },
     {
       "image": "steak_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1208,
-      "y": 415
+      "x": 871,
+      "y": 402
     },
     {
       "image": "steak_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1356,
-      "y": 870
+      "x": 912,
+      "y": 723
     },
     {
       "image": "steak_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1291,
-      "y": 1070
+      "x": 871,
+      "y": 797
     },
     {
       "image": "steak_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1157,
-      "y": 1232
+      "x": 814,
+      "y": 858
     },
     {
       "image": "steak_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 973,
-      "y": 1333
+      "x": 743,
+      "y": 904
     },
     {
       "image": "steak_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 764,
-      "y": 1359
+      "x": 662,
+      "y": 930
     },
     {
       "image": "steak_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 561,
-      "y": 1307
+      "x": 578,
+      "y": 935
     },
     {
       "image": "steak_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 308,
-      "y": 529
+      "x": 305,
+      "y": 438
     },
     {
       "image": "steak_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 442,
-      "y": 367
+      "x": 355,
+      "y": 369
     }
   ]
 }

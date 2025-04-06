@@ -2,155 +2,167 @@
   "base_name": "polar_bear",
   "click_points": [
     [
-      624,
-      872
+      309,
+      864
     ],
     [
-      524,
-      1165
+      486,
+      891
     ],
     [
-      403,
-      1100
+      730,
+      813
     ],
     [
-      998,
-      995
+      724,
+      570
     ],
     [
-      1273,
-      690
+      455,
+      642
+    ],
+    [
+      258,
+      539
+    ],
+    [
+      502,
+      488
+    ],
+    [
+      961,
+      527
     ]
   ],
-  "circle_radius": 469,
+  "circle_radius": 348,
   "dots": [
     {
       "image": "polar_bear_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1269,
-      "y": 800
+      "x": 948,
+      "y": 600
     },
     {
       "image": "polar_bear_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 655,
-      "y": 1246
+      "x": 492,
+      "y": 930
     },
     {
       "image": "polar_bear_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 458,
-      "y": 1121
+      "x": 346,
+      "y": 838
     },
     {
       "image": "polar_bear_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 389,
-      "y": 1025
+      "x": 295,
+      "y": 767
     },
     {
       "image": "polar_bear_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 345,
-      "y": 916
+      "x": 262,
+      "y": 686
     },
     {
       "image": "polar_bear_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 331,
-      "y": 799
+      "x": 252,
+      "y": 599
     },
     {
       "image": "polar_bear_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 345,
-      "y": 683
+      "x": 262,
+      "y": 513
     },
     {
       "image": "polar_bear_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1236,
-      "y": 627
+      "x": 923,
+      "y": 471
     },
     {
       "image": "polar_bear_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1254,
-      "y": 916
+      "x": 937,
+      "y": 686
     },
     {
       "image": "polar_bear_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1210,
-      "y": 1025
+      "x": 904,
+      "y": 767
     },
     {
       "image": "polar_bear_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1141,
-      "y": 1121
+      "x": 853,
+      "y": 838
     },
     {
       "image": "polar_bear_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 887,
-      "y": 1260
+      "x": 665,
+      "y": 941
     },
     {
       "image": "polar_bear_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 501,
-      "y": 438
+      "x": 578,
+      "y": 947
     },
     {
       "image": "polar_bear_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 600,
-      "y": 375
+      "x": 413,
+      "y": 306
     },
     {
       "image": "polar_bear_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 712,
-      "y": 339
+      "x": 492,
+      "y": 269
     },
     {
       "image": "polar_bear_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 829,
-      "y": 331
+      "x": 578,
+      "y": 252
     }
   ]
 }

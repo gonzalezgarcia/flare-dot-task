@@ -2,171 +2,183 @@
   "base_name": "mannequin",
   "click_points": [
     [
-      365,
-      1317
+      260,
+      996
     ],
     [
-      580,
-      1130
+      313,
+      852
     ],
     [
-      665,
-      693
+      726,
+      860
+    ],
+    [
+      554,
+      1074
+    ],
+    [
+      730,
+      691
+    ],
+    [
+      823,
+      412
+    ],
+    [
+      476,
+      564
+    ],
+    [
+      581,
+      365
+    ],
+    [
+      737,
+      441
+    ],
+    [
+      704,
+      100
+    ],
+    [
+      922,
+      543
     ],
     [
       977,
-      425
-    ],
-    [
-      969,
-      185
-    ],
-    [
-      1072,
-      590
-    ],
-    [
-      983,
-      1173
-    ],
-    [
-      1263,
-      857
-    ],
-    [
-      989,
-      698
+      726
     ]
   ],
-  "circle_radius": 605,
+  "circle_radius": 394,
   "dots": [
     {
       "image": "mannequin_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1330,
-      "y": 1091
+      "x": 990,
+      "y": 649
     },
     {
       "image": "mannequin_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1289,
-      "y": 1155
+      "x": 966,
+      "y": 745
     },
     {
       "image": "mannequin_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 762,
-      "y": 1403
+      "x": 918,
+      "y": 831
     },
     {
       "image": "mannequin_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 414,
-      "y": 1266
+      "x": 851,
+      "y": 903
     },
     {
       "image": "mannequin_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 358,
-      "y": 1214
+      "x": 312,
+      "y": 869
     },
     {
       "image": "mannequin_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 913,
-      "y": 205
+      "x": 673,
+      "y": 212
     },
     {
       "image": "mannequin_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 986,
-      "y": 224
+      "x": 767,
+      "y": 243
     },
     {
       "image": "mannequin_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1057,
-      "y": 252
+      "x": 851,
+      "y": 296
     },
     {
       "image": "mannequin_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1405,
-      "y": 800
+      "x": 432,
+      "y": 956
     },
     {
       "image": "mannequin_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 986,
-      "y": 1375
+      "x": 209,
+      "y": 649
     },
     {
       "image": "mannequin_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 542,
-      "y": 1347
+      "x": 209,
+      "y": 550
     },
     {
       "image": "mannequin_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 199,
-      "y": 875
+      "x": 233,
+      "y": 454
     },
     {
       "image": "mannequin_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 214,
-      "y": 649
+      "x": 281,
+      "y": 368
     },
     {
       "image": "mannequin_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 310,
-      "y": 444
+      "x": 348,
+      "y": 296
     },
     {
       "image": "mannequin_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 475,
-      "y": 289
+      "x": 432,
+      "y": 243
     },
     {
       "image": "mannequin_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 686,
-      "y": 205
+      "x": 526,
+      "y": 212
     }
   ]
 }

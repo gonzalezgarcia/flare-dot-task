@@ -2,171 +2,191 @@
   "base_name": "magnifier",
   "click_points": [
     [
-      465,
-      1026
+      850,
+      1012
     ],
     [
-      1195,
-      1308
+      774,
+      924
     ],
     [
-      994,
-      942
+      747,
+      640
     ],
     [
-      503,
-      537
+      620,
+      505
     ],
     [
-      933,
-      478
+      591,
+      379
     ],
     [
-      1183,
-      437
+      457,
+      354
     ],
     [
-      1291,
-      556
+      574,
+      207
     ],
     [
-      1299,
-      633
+      334,
+      377
     ],
     [
-      1260,
-      1004
+      909,
+      322
+    ],
+    [
+      414,
+      700
+    ],
+    [
+      441,
+      957
+    ],
+    [
+      796,
+      735
+    ],
+    [
+      1004,
+      821
+    ],
+    [
+      597,
+      675
     ]
   ],
-  "circle_radius": 590,
+  "circle_radius": 334,
   "dots": [
     {
       "image": "magnifier_mooney_dot_on1.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1317,
-      "y": 1084
+      "x": 870,
+      "y": 796
     },
     {
       "image": "magnifier_mooney_dot_on2.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1277,
-      "y": 1146
+      "x": 329,
+      "y": 796
     },
     {
       "image": "magnifier_mooney_dot_on3.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1230,
-      "y": 1203
+      "x": 329,
+      "y": 403
     },
     {
       "image": "magnifier_mooney_dot_on4.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 4,
-      "x": 1176,
-      "y": 1254
+      "x": 387,
+      "y": 342
     },
     {
       "image": "magnifier_mooney_dot_on5.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 5,
-      "x": 1116,
-      "y": 1298
+      "x": 457,
+      "y": 297
     },
     {
       "image": "magnifier_mooney_dot_on6.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 6,
-      "x": 1051,
-      "y": 1333
+      "x": 537,
+      "y": 271
     },
     {
       "image": "magnifier_mooney_dot_on7.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 7,
-      "x": 982,
-      "y": 1361
+      "x": 620,
+      "y": 266
     },
     {
       "image": "magnifier_mooney_dot_on8.jpg",
       "label": "on",
       "type": "mooney",
       "dot_number": 8,
-      "x": 1277,
-      "y": 453
+      "x": 703,
+      "y": 282
     },
     {
       "image": "magnifier_mooney_dot_off1.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 1,
-      "x": 1390,
-      "y": 800
+      "x": 620,
+      "y": 933
     },
     {
       "image": "magnifier_mooney_dot_off2.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 2,
-      "x": 1385,
-      "y": 873
+      "x": 579,
+      "y": 933
     },
     {
       "image": "magnifier_mooney_dot_off3.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 3,
-      "x": 1371,
-      "y": 946
+      "x": 537,
+      "y": 928
     },
     {
       "image": "magnifier_mooney_dot_off4.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 4,
-      "x": 251,
-      "y": 1017
+      "x": 496,
+      "y": 917
     },
     {
       "image": "magnifier_mooney_dot_off5.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 5,
-      "x": 228,
-      "y": 946
+      "x": 421,
+      "y": 882
     },
     {
       "image": "magnifier_mooney_dot_off6.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 6,
-      "x": 214,
-      "y": 873
+      "x": 387,
+      "y": 857
     },
     {
       "image": "magnifier_mooney_dot_off7.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 7,
-      "x": 210,
-      "y": 799
+      "x": 276,
+      "y": 683
     },
     {
       "image": "magnifier_mooney_dot_off8.jpg",
       "label": "off",
       "type": "mooney",
       "dot_number": 8,
-      "x": 214,
-      "y": 726
+      "x": 268,
+      "y": 641
     }
   ]
 }
