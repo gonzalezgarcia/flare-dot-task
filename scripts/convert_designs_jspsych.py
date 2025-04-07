@@ -81,6 +81,18 @@ for image_file in image_files:
         shutil.copy(source_path, destination_dir)
     else:
         print(f"File {source_path} does not exist.")
+        
+
+for image_file in image_files:
+    # remove the 'gray'
+    image_file = image_file.replace('_gray','_mooney.jpg')
+    # Check if the file exists in the source directory
+    source_path = os.path.join("../stimuli/mooney", image_file)
+    if os.path.isfile(source_path):
+        # Copy the file to the destination directory
+        shutil.copy(source_path, destination_dir)
+    else:
+        print(f"File {source_path} does not exist.")
 
 #%% list stimuli in ../task/stimuli
 ## WATCH OUT FOR .DS_STORE FILES, IT WILL PREVENT JSPSYCH FROM LOADING THE STIMULI
@@ -92,9 +104,9 @@ image_list = [file for file in os.listdir('../task/stim') if file.lower().endswi
 for i in range(len(image_list)):
     image_list[i] = 'stim/' + image_list[i]
     
-with open("../task/preload_images.json", "w") as f:
-    json.dump(image_list, f)
 
+with open("../task/preload_images.json", "w") as f:
+    f.write(f"var design_images = {image_list}")
 #%% do some image preprocessing to make sure all images are the same size
 from PIL import Image
 import os

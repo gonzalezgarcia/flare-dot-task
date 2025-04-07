@@ -141,6 +141,28 @@
     /////  WECLOME / DEMOGRAPHICS  /////
     ////////////////////////////////////
 
+	// BROWSER CHECK //
+	var welcome_message = ['<p>Welcome to the experiment.</p>' + '<p>Press "Next" to begin.</p>'];
+    var not_supported_message = ['<p>This experiment requires the Chrome web browser.</p>'];
+	var welcome = {
+		type: 'instructions',
+		pages: welcome_message,
+		show_clickable_nav: true,
+		button_label_next: "Next",
+		on_start: function(trial){
+			if (bowser.name == 'Chrome' || bowser.name == 'Firefox'){
+				if (bowser.mobile !== true) {
+				trial.pages = welcome_message;
+				}
+			} else {
+				trial.pages = not_supported_message;
+				setTimeout(function(){location.href="html/WrongBrowser.html"}, 0);
+			}
+		}
+	};
+	timeline.push(welcome)
+	console.log('Browser: ' + bowser.name );
+	console.log('Mobile: ' + bowser.mobile );	
 
 	// WELCOME MESSAGE & INFORMED CONSENT //
 	var consent = {
@@ -154,12 +176,25 @@
 	timeline.push(consent)
 	
     /* SUBJECT DATA */
+	var ppn_info_0 = {
+		type: 'survey-text-autocomplete',
+		questions: [
+		{prompt: 'What is your nationality?',
+		placeholder: 'Please, start typing',
+		name: 'nationality',
+		required: true,
+		word_list: ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia', 'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 'Croatia', 'Cuba', 'Cyprus', 'Czech Republic (Czechia)', 'Côte d’Ivoire', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'DR Congo', 'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Holy See', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts & Nevis', 'Saint Lucia', 'Samoa', 'San Marino', 'Sao Tome & Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'St. Vincent & Grenadines', 'State of Palestine', 'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Tajikistan', 'Tanzania', 'Thailand', 'Timor-Leste', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']}],
+		trial_duration: 200000,
+		button_label: 'Click here or in a word from to the list to submit',
+		
+		}
 	
+	timeline.push(ppn_info_0)
+
 	var ppn_info_1 = {
   		type: 'survey-html-form',
-		html: '<p>What is your Prolific ID?</p><p><input name="prolificID" id="prolificID" /></p>'+ // add later minlength="24"
-			  '<p>How old are you?</p><p><input name="age" type="number" id="age" required min="18"/></p>'+
-			  '<p>What is your nationality?</p><p><input name="nationality" type="text" id="nationality" required/></p>' 
+		html: '<p>What is your Prolific ID?</p><p><input name="prolificID" id="prolificID" minlength="24" required/></p>'+
+			  '<p>How old are you?</p><p><input name="age" type="number" id="age" required min="18"/></p>'
 	}
 	timeline.push(ppn_info_1)
 
@@ -192,7 +227,7 @@
 				subject_ProlificID: JSON.parse(jsPsych.data.get().last(2).values()[0].responses)["prolificID"],
 				designmatrix_ID : id,
 				age: JSON.parse(jsPsych.data.get().last(2).values()[0].responses)["age"],
-				nationality: JSON.parse(jsPsych.data.get().last(2).values()[0].responses)["nationality"],
+				nationality: JSON.parse(jsPsych.data.get().last(3).values()[0].responses)["nationality"],
 				gender: JSON.parse(jsPsych.data.get().last(1).values()[0].responses)["gender"],
 				handedness: JSON.parse(jsPsych.data.get().last(1).values()[0].responses)["handedness"]
 			});
@@ -666,7 +701,7 @@
 		type: "html-keyboard-response",
 		stimulus: function(){
 		 		{var html = '<p>This is the end of the experiment. Thank you very much for participating!</p>';
-				 	html += '<p>Please use this Completion Code: <br><b>77715FF5</b></br></p>';
+				 	html += '<p>Please use this Completion Code: <br><b>C192QVPG</b></br></p>';
 		 			html += '<p>Press spacebar to finish. Feel free to close the window afterwards</p>';
 		}
 		return html},
@@ -727,7 +762,7 @@
 
 			// Submit results to JATOS
 			jatos.submitResultData(results_full_filt, jatos.startNextComponent);
-			jatos.endStudyAndRedirect("https://app.prolific.co/submissions/complete?cc=77715FF5");
+			jatos.endStudyAndRedirect("https://app.prolific.com/submissions/complete?cc=C192QVPG");
 		},
 	on_close: function() {
 			// saveData("Data_aborted_"+subject_id, jsPsych.data.get().csv());
