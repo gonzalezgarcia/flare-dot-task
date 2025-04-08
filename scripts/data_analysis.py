@@ -186,7 +186,7 @@ grouped_data = grouped_data.reset_index()
 g = sns.catplot(
     data=grouped_data, x="phase", y="rt",hue="manipulation",
     palette="Set2", kind="point",order=['pre', 'post'],
-    dodge=True
+    dodge=True, errorbar='se'
 )
 
 aov = pg.rm_anova(data=grouped_data,
@@ -209,13 +209,13 @@ g = sns.catplot(
 )
 
 grouped_data = data[data['block_type'] == 'dot'].copy()
-grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 4000)]
+grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 5000)]
 grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
 
 g = sns.catplot(
     data=grouped_data, x="phase", y="dot_acc",hue="manipulation",
     palette="Set2", kind="point",order=['pre', 'post'],
-    dodge=True
+    dodge=True, errorbar='se'
 )
 aov = pg.rm_anova(data=grouped_data,
                       dv='dot_acc',
@@ -233,7 +233,7 @@ pivoted = grouped_data.pivot_table(
     values='dot_acc'
 ).reset_index()
 
-pivoted['learning_index'] = pivoted['pre'] - pivoted['post']
+pivoted['learning_index'] = pivoted['post'] - pivoted['pre']
 
 # Convert from wide to long format
 long_df = pd.melt(
@@ -247,7 +247,7 @@ long_df = pd.melt(
 g = sns.catplot(
     data=long_df, x="manipulation", y="learning_index",
     palette="Set2", kind="point",errorbar="se",
-    dodge=True
+    dodge=True, 
 )
 
 aov = pg.rm_anova(data=long_df,
@@ -316,6 +316,8 @@ g = sns.catplot(
 
 grouped_data =data[data['block_type'] != 'dot'].copy()
 grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+grouped_data = grouped_data[(grouped_data["phase"] != 'color')]
+
 grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
                                     as_index=False).verbal_acc_corrected.mean()
 grouped_data = grouped_data.reset_index()
@@ -330,6 +332,13 @@ aov = pg.rm_anova(data=grouped_data,
                       within=['phase','manipulation'], subject='subject',
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
+
+posthoc = pg.pairwise_tests(data=grouped_data,
+                            dv='verbal_acc_corrected',
+                            within=['phase', 'manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+pg.print_table(posthoc, floatfmt=".3f")
 
 # %% SEMANTIC DISTANCE STUFF
 from scipy.spatial.distance import pdist, squareform
@@ -613,3 +622,10 @@ aov = pg.rm_anova(data=long_df,
                       within='manipulation', subject='subject',
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
+
+posthoc = pg.pairwise_tests(data=long_df,
+                            dv='prior_usage',
+                            within=['manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+pg.print_table(posthoc, floatfmt=".3f")
