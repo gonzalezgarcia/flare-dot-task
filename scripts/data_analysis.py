@@ -14,7 +14,7 @@ sns.set_style("ticks")
 sns.set_context("talk")
 
 #%% Define paths and load data
-exp_code = "exp_1"
+exp_code = "exp_3"
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(curr_dir, "..", "data", exp_code, "derivatives")
 

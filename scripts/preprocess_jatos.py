@@ -18,7 +18,7 @@ import re
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 # File paths
-exp_code = 'exp_2'
+exp_code = 'exp_3'
 BASE_DIR = Path(__file__).resolve().parent.parent
 RAW_DIR = BASE_DIR / "data" / exp_code/ "raw"
 DERIV_DIR = BASE_DIR / "data" / exp_code / "derivatives"
