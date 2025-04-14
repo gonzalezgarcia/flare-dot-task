@@ -1,0 +1,34 @@
+Preprocessing log — flare-dot-task
+Timestamp: 2025-04-12 10:27:43
+
+Input file: jatos_results_300ms.txt
+Total chunks found: 92
+Successful participant CSVs saved: 86
+Subjects with incomplete data: 14
+ - m8chyx54l9s89vl — 55 trials
+ - hk2yrodd1sm9qe5 — 175 trials
+ - m2mlk4x0fs8jz09 — 104 trials
+ - esqhns62gw2jvdz — 182 trials
+ - tkh5nswf5vf4at7 — 160 trials
+ - h421uee8l6khhh9 — 109 trials
+ - gdqrb2hsngqfpab — 64 trials
+ - 6fz8rddjb35ptka — 116 trials
+ - jxuvqk054h23be6 — 148 trials
+ - 7uwry85u8d5w8ok — 66 trials
+ - aefx8lx7bcta8za — 66 trials
+ - 967m6ok0bnob829 — 155 trials
+ - p4m26cw7mklrty7 — 144 trials
+ - ppmyfbf2ryestt6 — 182 trials
+
+Skipped: 6
+
+Skipped chunks:
+ - Chunk 24 — Exception: Missing 'block_type' column
+ - Chunk 34 — missing columns: ['verbal_id']
+ - Chunk 45 — Exception: Missing 'block_type' column
+ - Chunk 47 — Exception: Missing 'block_type' column
+ - Chunk 50 — Exception: Missing 'block_type' column
+ - Chunk 58 — Exception: Missing 'block_type' column
+
+
+FINAL N OF GOOD PARTICIPANTS: 72

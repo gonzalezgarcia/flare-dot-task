@@ -1,0 +1,21 @@
+Preprocessing log — flare-dot-task
+Timestamp: 2025-04-12 10:28:15
+
+Input file: jatos_results_100ms.txt
+Total chunks found: 32
+Successful participant CSVs saved: 31
+Subjects with incomplete data: 6
+ - fjkdse8p4wr017e — 129 trials
+ - k0zfhavyvksnj6x — 150 trials
+ - cn2f69d0utem2uo — 98 trials
+ - 5hzr39jszdezuez — 19 trials
+ - 50o2glpatq93z0h — 59 trials
+ - 94zy6xg85gveazt — 64 trials
+
+Skipped: 1
+
+Skipped chunks:
+ - Chunk 27 — Exception: Missing 'block_type' column
+
+
+FINAL N OF GOOD PARTICIPANTS: 25
