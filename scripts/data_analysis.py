@@ -5,9 +5,10 @@ Analyze cleaned per-subject data from data/derivatives/
 import pandas as pd
 import numpy as np
 import os
-import pingouin as pg
+#import pingouin as pg
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import gaussian_kde
 
 # Plotting style
 sns.set_style("ticks")
@@ -118,6 +119,7 @@ grouped_data = grouped_data.groupby(['subject','image_type', 'manipulation', 'ph
                                     as_index=False).dot_acc.mean()
 grouped_data = grouped_data.reset_index()
 
+
 g = sns.catplot(
     data=grouped_data, x="phase", y="dot_acc", hue="image_type", col="manipulation",
     palette="Set2", kind="point",order=['pre', 'post'],
@@ -125,7 +127,7 @@ g = sns.catplot(
 )
 
 grouped_data = data[data['block_type'] == 'dot'].copy()
-grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 5000)]
+grouped_data = grouped_data[(grouped_data['rt'] > 100)]
 grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
 grouped_data = grouped_data[(grouped_data["phase"] != 'color')]
 
@@ -210,6 +212,9 @@ posthoc = pg.pairwise_tests(data=grouped_data,
                             effsize='hedges')
 pg.print_table(posthoc, floatfmt=".3f")
 
+
+
+
 # %% recognition - semantic distance
 data_recog = data[data['block_type'] != 'dot'].copy()
 # remove trials with nan in semantic distance
@@ -254,6 +259,13 @@ aov = pg.rm_anova(data=grouped_data,
                       within=['phase','manipulation'], subject='subject',
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
+
+posthoc = pg.pairwise_tests(data=grouped_data,
+                            dv='semantic_distance',
+                            within=['phase', 'manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+pg.print_table(posthoc, floatfmt=".3f")
 # %% extract learning index by subtracitng pre semantic distance from post semantic distance
 data_recog = data[data['block_type'] != 'dot'].copy()
 data_recog = data_recog[data_recog['semantic_distance'].notna()]
@@ -292,6 +304,13 @@ aov = pg.rm_anova(data=long_df,
                       within='manipulation', subject='subject',
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
+
+posthoc = pg.pairwise_tests(data=long_df,
+                            dv='learning_index',
+                            within='manipulation', subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+pg.print_table(posthoc, floatfmt=".3f")
 
 #%% Prior usage
 grouped_data = data_recog[data_recog['block_type'] != 'dot']
@@ -334,4 +353,3 @@ posthoc = pg.pairwise_tests(data=long_df,
                             parametric=True, padjust='fdr_bh',
                             effsize='hedges')
 pg.print_table(posthoc, floatfmt=".3f")
-# %%
