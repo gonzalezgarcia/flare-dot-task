@@ -1,7 +1,7 @@
 Preprocessing log — flare-dot-task
-Timestamp: 2025-04-14 18:02:37
+Timestamp: 2025-04-24 16:39:29
 
-Input file: jatos_results_500ms.txt
+Input file: jatos_results_300ms.txt
 Total chunks found: 97
 Successful participant CSVs saved: 90
 Subjects with incomplete data: 13

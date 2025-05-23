@@ -1,0 +1,17 @@
+__pycache__/
+.DS_Store
+*.pth
+*.ipynb_checkpoints
+stimuli/gray/*.jpg
+stimuli/mooney/*jpg
+stimuli/original/*jpg
+
+.env
+.vscode/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+models/sam_vit_h_4b8939.pth

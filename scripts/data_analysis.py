@@ -5,7 +5,7 @@ Analyze cleaned per-subject data from data/derivatives/
 import pandas as pd
 import numpy as np
 import os
-#import pingouin as pg
+import pingouin as pg
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import gaussian_kde
@@ -36,7 +36,7 @@ for file in all_csvs:
 
 #%% Combine all into one DataFrame and print descriptive
 data = pd.concat(dfs, ignore_index=True)
-print(f"✅ Loaded {len(dfs)} participants. Skipped {len(all_csvs) - len(dfs)} participants due to not finishing the experiment.")
+print(f"✅ Loaded {len(dfs)} 'good' participants. Skipped {len(all_csvs) - len(dfs)} participants due to not finishing the experiment.")
 
 age = data.groupby(["subject"], as_index=False).age.mean()
 gender = pd.DataFrame(data.groupby(["subject"]).gender.unique())
@@ -112,6 +112,43 @@ aov = pg.rm_anova(data=grouped_data,
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
 
+# compute performance relative to catch trials for each manipulation and phase
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['dot_acc'] == 1)]
+grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 4999)]
+
+# Separate target and catch trials
+target_data = grouped_data[grouped_data['image_type'] == 'target']
+catch_data = grouped_data[grouped_data['image_type'] == 'catch']
+
+# Compute mean RT for target and catch trials
+target_grouped = target_data.groupby(['subject', 'manipulation', 'phase'], as_index=False).rt.mean()
+catch_grouped = catch_data.groupby(['subject', 'manipulation', 'phase'], as_index=False).rt.mean()
+
+# Merge target and catch data on subject, manipulation, and phase
+merged_data = pd.merge(target_grouped, catch_grouped, on=['subject', 'manipulation', 'phase'], suffixes=('_target', '_catch'))
+
+# Compute RT relative to catch trials
+merged_data['rt_relative'] = merged_data['rt_catch'] - merged_data['rt_target']
+
+# Keep only relevant columns
+grouped_data = merged_data[['subject', 'manipulation', 'phase', 'rt_relative']]
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="rt_relative",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True, errorbar='se'
+)
+
+aov = pg.rm_anova(data=grouped_data,
+                      dv='rt_relative',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=True)
+pg.print_table(aov, floatfmt=".3f")
+
+
+
+
 #%% DOT TASK - ACC
 grouped_data = data[data['block_type'] == 'dot'].copy()
 grouped_data = grouped_data[(grouped_data['rt'] > 100)]
@@ -142,8 +179,51 @@ aov = pg.rm_anova(data=grouped_data,
                       detailed=True)
 pg.print_table(aov, floatfmt=".3f")
 
-# %% extract learning index by subtracitng pre semantic distance from post semantic distance
 
+# compute performance relative to catch trials for each manipulation and phase
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['rt'] > 100)]
+grouped_data = grouped_data.groupby(['subject','image_type', 'manipulation', 'phase'],
+                                    as_index=False).dot_acc.mean()
+grouped_data = grouped_data.reset_index()
+
+
+# Separate target and catch trials
+target_data = grouped_data[grouped_data['image_type'] == 'target']
+catch_data = grouped_data[grouped_data['image_type'] == 'catch']
+
+# Compute mean acc for target and catch trials
+target_grouped = target_data.groupby(['subject', 'manipulation', 'phase'], as_index=False).dot_acc.mean()
+catch_grouped = catch_data.groupby(['subject', 'manipulation', 'phase'], as_index=False).dot_acc.mean()
+
+# Merge target and catch data on subject, manipulation, and phase
+merged_data = pd.merge(target_grouped, catch_grouped, on=['subject', 'manipulation', 'phase'], suffixes=('_target', '_catch'))
+
+# Compute acc relative to catch trials
+merged_data['acc_relative'] = merged_data['dot_acc_target'] - merged_data['dot_acc_catch']
+
+# Keep only relevant columns
+grouped_data = merged_data[['subject', 'manipulation', 'phase', 'acc_relative']]
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="acc_relative",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True, errorbar='se'
+)
+
+aov = pg.rm_anova(data=grouped_data,
+                      dv='acc_relative',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=True)
+pg.print_table(aov, floatfmt=".3f")
+
+
+# %% extract learning index by subtracitng pre semantic distance from post semantic distance
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['rt'] > 100)]
+grouped_data = grouped_data.groupby(['subject','image_type', 'manipulation', 'phase'],
+                                    as_index=False).dot_acc.mean()
+grouped_data = grouped_data.reset_index()
 # Pivot so we have one row per subject x manipulation, with pre/post as columns
 pivoted = grouped_data.pivot_table(
     index=['subject', 'manipulation'],
@@ -175,16 +255,45 @@ aov = pg.rm_anova(data=long_df,
 pg.print_table(aov, floatfmt=".3f")
 # %% recognition - verbal accuracy
 
-grouped_data = data[data['block_type'] != 'dot'].copy()
-grouped_data = grouped_data.groupby(['subject','image_type', 'manipulation', 'phase'],
+verbal_data = data[data['block_type'] != 'dot'].copy()
+grouped_data = verbal_data.groupby(['subject','image_type', 'manipulation', 'phase'],
                                     as_index=False).verbal_acc_corrected.mean()
 grouped_data = grouped_data.reset_index()
 
 g = sns.catplot(
     data=grouped_data, x="phase", y="verbal_acc_corrected", hue="image_type", col="manipulation",
-    palette="Set2", kind="point",order=['pre',  'post'],
+    palette="Set2", kind="point",order=['pre',  'color','post'],
     dodge=True
 )
+
+## How do our manipulations affect verbal id during unambiguous image presentation?
+unambiguous_verbal_data = verbal_data[(verbal_data["image_type"] == 'target')]
+unambiguous_verbal_data = unambiguous_verbal_data[(unambiguous_verbal_data["phase"] == 'color')]
+# combine horizontal_flip and regular into one group (upright)
+unambiguous_verbal_data['manipulation'] = np.where(
+    unambiguous_verbal_data['manipulation'].isin(['horizontal_flip', 'regular']),
+    'upright',
+    unambiguous_verbal_data['manipulation']
+)
+unambiguous_verbal_data = unambiguous_verbal_data.groupby(['subject', 'manipulation'],
+                                    as_index=False).verbal_acc_corrected.mean()
+unambiguous_verbal_data = unambiguous_verbal_data.reset_index()
+g = sns.catplot(
+    data=unambiguous_verbal_data, x="manipulation", y="verbal_acc_corrected",
+    kind="point",
+    dodge=True
+)
+
+# one-sided t-test
+posthoc = pg.pairwise_tests(data=unambiguous_verbal_data,
+                            dv='verbal_acc_corrected',
+                            within='manipulation', subject='subject',
+                            parametric=True, padjust='fdr_bh', alternative = "greater",
+                            effsize='hedges')
+pg.print_table(posthoc, floatfmt=".3f")
+
+## How do our manipulations affect verbal id during Mooney images?
+
 
 grouped_data =data[data['block_type'] != 'dot'].copy()
 grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]

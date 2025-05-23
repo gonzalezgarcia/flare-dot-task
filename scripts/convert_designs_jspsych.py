@@ -10,9 +10,10 @@ os.chdir(curr_dir)
 
 #%% list all .csv files in the  designs folder
 all_designs = []
-for filename in os.listdir('../designs'):
+for filename in os.listdir('../task/exp_4/designs'):
+    print
     if filename.endswith('.csv'):
-        df = pd.read_csv(f'../designs/{filename}')
+        df = pd.read_csv(f'../task/exp_4/designs/{filename}')
         
         # convert to json and clean up (jspsych reads designs in json format)
         df_json = df.to_json(orient = "records", indent=0, lines = False)
@@ -30,7 +31,7 @@ design_matrix = str(all_designs)
 design_matrix = design_matrix.replace("'","")
 design_matrix = design_matrix.replace("\\","")
 # save the design matrix to a json file
-with open("../task/design_matrices.json", "w") as f:
+with open("../task/exp_4/design_matrices.json", "w") as f:
     f.write(f"var DM = {design_matrix}")
 
 
@@ -42,7 +43,7 @@ with open("../task/design_matrices.json", "w") as f:
 source_dir = "../stimuli/output_dots"
 
 # Path to the destination directory
-destination_dir = "../task/stim"
+destination_dir = "../task/exp_4/stim"
 
 # Iterate through all folders in the source directory
 for folder_name in os.listdir(source_dir):
@@ -98,7 +99,7 @@ for image_file in image_files:
 ## WATCH OUT FOR .DS_STORE FILES, IT WILL PREVENT JSPSYCH FROM LOADING THE STIMULI
 stimuli = []
 
-image_list = [file for file in os.listdir('../task/stim') if file.lower().endswith('.jpg')]
+image_list = [file for file in os.listdir('../task/exp_4/stim') if file.lower().endswith('.jpg')]
 
 # add "stim/" to the beginning of each image name
 for i in range(len(image_list)):
@@ -113,7 +114,7 @@ import os
 import glob
 import shutil
 # Set the directory containing the images
-image_dir = "../task/stim/"
+image_dir = "../task/exp_4/stim/"
 # Set the desired size
 desired_size = (1200, 1200)
 # Loop through all the images in the directory

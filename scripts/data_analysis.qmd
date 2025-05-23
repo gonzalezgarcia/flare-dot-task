@@ -1,0 +1,545 @@
+---
+title: "Assessing the consequences of abstraction in one-shot perceptual learning"
+subtitle: "FLARE WP2 Exp 1"
+author: "Carlos González-García"
+format: 
+    html:
+        toc: true
+        code-fold: true
+jupyter: python3
+---
+
+# Rationale and summary
+
+Achieving robust, long-term increments in knowledge after one single event is a remarkable feat that separates humans from other learning agents. This is the case in one-shot perceptual learning, where priors are proposed to operate as internal models of the world to optimally parse ambiguous scenarios. However, the representational features of priors in one-shot perceptual learning are largely unknown. Here, **I test the hypothesis that the extent to which an abstract representation of the episode is available will determine the success of online perceptual ambiguity resolution**. I report the results of a behavioral series that systematically assessed the impact of independently manipulating sensory-specific and abstract priors using Mooney images, which are known to elicit strong one-shot learning effects. To affect abstract processing while preserving concrete aspects of the image, in some trials, both Mooney and unambiguous counterparts were presented upside down, which makes object properties more difficult to extract and impairs access to the semantics of the scene. In these trials, perceptual learning can formally take place (i.e., participants are exposed to a clear, not distorted version of the Mooney images), but I expected the impaired access to abstract information to impact behavioral indices. To manipulate low-level perceptual aspects while preserving abstract processing, in some other trials, unambiguous images were flipped horizontally, compared to the Mooney version of the same image. This manipulation disrupts the processing of concrete information since the pixel-to-pixel mapping changes from Mooney to gray-scale images but allows for the establishment of abstract priors.
+
+# Methods
+
+The task consisted of...
+
+## Participants
+
+```{python}
+# load libraries
+import pandas as pd
+import numpy as np
+import os
+import pingouin as pg
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import gaussian_kde
+import pyprojroot
+import math
+from scipy import stats
+Z = stats.norm.ppf
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+# Plotting style
+sns.set_style("ticks")
+sns.set_context("talk")
+
+#%% Define paths and load data
+
+exp_code = "exp_3"
+root_dir = pyprojroot.here()
+data_dir = os.path.join(root_dir,  "data", exp_code, "derivatives")
+
+# Load all cleaned subject files
+all_csvs = [f for f in os.listdir(data_dir) if f.endswith(".csv")]
+dfs = []
+
+for file in all_csvs:
+    df = pd.read_csv(os.path.join(data_dir, file))
+    # if has 195 trials, append, otherwise skip
+    if len(df) == 195:
+        #print(f"✅ Loaded {file} with {len(df)} trials")
+        dfs.append(df)
+    else:
+        #print(f"❌ Skipped {file} with {len(df)} trials")
+        continue
+
+#%% Combine all into one DataFrame and print descriptive
+data = pd.concat(dfs, ignore_index=True)
+print(f"✅ Loaded {len(dfs)} 'good' participants. Skipped {len(all_csvs) - len(dfs)} participants due to not finishing the experiment.")
+
+age = data.groupby(["subject"], as_index=False).age.mean()
+gender = pd.DataFrame(data.groupby(["subject"]).gender.unique())
+handedness = pd.DataFrame(data.groupby(["subject"]).handedness.unique())
+
+
+
+mean_age = age["age"].mean()
+std_dev = age["age"].std()
+age_range = [age["age"].min(), age["age"].max()]
+output_string = f"Mean Age: {mean_age:.2f} (±{std_dev:.2f}), Range = [{age_range[0]} - {age_range[1]}]"
+print(output_string)
+
+gender_counts = gender["gender"].value_counts()
+output_string = "Gender: " + \
+    ', '.join([f"{count} {gender}" for gender,
+                count in gender_counts.items()])
+output_string = output_string.replace(
+    '[', '').replace(']', '').replace("'", '')
+print(output_string)
+
+hand_counts = handedness["handedness"].value_counts()
+output_string = "Handedness: " + \
+    ', '.join([f"{count} {handedness}" for handedness,
+                count in hand_counts.items()])
+output_string = output_string.replace(
+    '[', '').replace(']', '').replace("'", '')
+print(output_string)
+# Calculate the number and proportion of unique subjects per nationality
+nationality_counts = data.groupby("nationality")["subject"].nunique()
+total_subjects = nationality_counts.sum()
+proportions = (nationality_counts / total_subjects) * 100
+
+# Print the results
+# print("Nationality:")
+# for nationality, count in nationality_counts.items():
+#     proportion = proportions[nationality]
+#     print(f"{nationality}: {count} subjects ({proportion:.2f}%)")
+```
+
+# Results
+
+## Dot task
+
+### Reaction times
+
+We first check if there's differences in RT between manipulations across phases (pre - post)
+
+```{python}
+
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['dot_acc'] == 1)]
+grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 4000)]
+
+grouped_data = grouped_data.groupby(['subject','image_type', 'manipulation', 'phase'],
+                                    as_index=False).rt.mean()
+grouped_data = grouped_data.reset_index()
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="rt",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True, errorbar='se'
+)
+```
+
+> Mean RT for each phase and manipulation. The error bars represent the standard error of the mean (SEM) for each condition.
+
+```{python}
+
+aov = pg.rm_anova(data=grouped_data,
+                      dv='rt',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=False)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+The ANOVA reveals a significant **main effect of phase**, indicating that participants were faster post- compared to pre-disambiguation. However, neither the manipulation nor the the phase \* manipulation interaction were significant.
+
+### Accuracy
+
+We then check if there's differences in accuracy between manipulations across phases (pre - post)
+
+```{python}
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 4999)]
+grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
+                                    as_index=False).dot_acc.mean()
+grouped_data = grouped_data.reset_index()
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="dot_acc",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True, errorbar='se'
+)
+```
+
+> Mean accuracy for each phase and manipulation. The error bars represent the standard error of the mean (SEM) for each condition.
+
+```{python}
+
+aov = pg.rm_anova(data=grouped_data,
+                      dv='dot_acc',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=False)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+The ANOVA reveals a significant **main effect of phase**, indicating that participants were more accurate in the dot task post- compared to pre-disambiguation. However, neither the manipulation nor the the phase \* manipulation interaction were significant.
+
+### SDT measures
+
+```{python}
+def SDT(hits, misses, fas, crs):
+    """ returns a dict with d-prime measures given hits, misses, false alarms, and correct rejections"""
+    # Floors an ceilings are replaced by half hits and half FA's
+    half_hit = 0.5 / (hits + misses)
+    half_fa = 0.5 / (fas + crs)
+
+    # Calculate hit_rate and avoid d' infinity
+    hit_rate = hits / (hits + misses)
+    if hit_rate == 1: 
+        hit_rate = 1 - half_hit
+    if hit_rate == 0: 
+        hit_rate = half_hit
+
+    # Calculate false alarm rate and avoid d' infinity
+    fa_rate = fas / (fas + crs)
+    if fa_rate == 1: 
+        fa_rate = 1 - half_fa
+    if fa_rate == 0: 
+        fa_rate = half_fa
+
+    # Return d', beta, c and Ad'
+    out = {}
+    out['dprime'] = Z(hit_rate) - Z(fa_rate)
+    out['beta'] = math.exp((Z(fa_rate)**2 - Z(hit_rate)**2) / 2)
+    out['criterion'] = -(Z(hit_rate) + Z(fa_rate)) / 2
+    out['Ad'] = stats.norm.cdf(out['dprime'] / math.sqrt(2))
+    
+    return(out)
+
+grouped_data = data[data['block_type'] == 'dot'].copy()
+grouped_data = grouped_data[(grouped_data['rt'] > 100) & (grouped_data['rt'] < 4999)]
+grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+
+grouped = grouped_data.groupby(['subject', 'manipulation', 'phase'])
+
+results = []
+
+for (subj, manipulation, phase), df_sub in grouped:
+    # Counts
+    hits = ((df_sub['dot_position'] == 'on') & (df_sub['dot_resp'] == 1)).sum()
+    misses = ((df_sub['dot_position'] == 'on') & (df_sub['dot_resp'] == 0)).sum()
+    fas = ((df_sub['dot_position'] == 'off') & (df_sub['dot_resp'] == 1)).sum()
+    crs = ((df_sub['dot_position'] == 'off') & (df_sub['dot_resp'] == 0)).sum()
+
+    # Use your custom SDT function
+    sdt = SDT(hits, misses, fas, crs)
+
+    # Append to results
+    results.append({
+        'subject': subj,
+        'manipulation': manipulation,
+        'phase': phase,
+        'dprime': sdt['dprime'],
+        'criterion': sdt['criterion'],
+        'beta': sdt['beta'],
+        'Ad': sdt['Ad']
+    })
+
+# Now create the DataFrame
+sdt_df = pd.DataFrame(results)
+
+# Optional: organize columns order if you want
+sdt_df = sdt_df[['subject', 'manipulation', 'phase', 'dprime', 'criterion', 'beta', 'Ad']]
+
+g = sns.catplot(
+    data=sdt_df, x="phase", y="dprime",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True, errorbar='se'
+)
+
+# g = sns.catplot(
+#     data=sdt_df, x="phase", y="beta",hue="manipulation",
+#     palette="Set2", kind="point",order=['pre', 'post'],
+#     dodge=True, errorbar='se'
+# )
+
+# g = sns.catplot(
+#     data=sdt_df, x="phase", y="criterion",hue="manipulation",
+#     palette="Set2", kind="point",order=['pre', 'post'],
+#     dodge=True, errorbar='se'
+# )
+```
+
+> Mean d' for each phase and manipulation. The error bars represent the standard error of the mean (SEM) for each condition.
+
+```{python}
+
+aov = pg.rm_anova(data=sdt_df,
+                      dv='dprime',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=False)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+```{python}
+# aov = pg.rm_anova(data=sdt_df,
+#                       dv='beta',
+#                       within=['phase','manipulation'], subject='subject',
+#                       detailed=False)
+# aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+```{python}
+# aov = pg.rm_anova(data=sdt_df,
+#                       dv='criterion',
+#                       within=['phase','manipulation'], subject='subject',
+#                       detailed=False)
+# aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+
+```
+
+Only d' shows significant effects. More specifically, an ANOVA on d' reveals a significant **main effect of phase**, indicating that participants were more sensitive to the dot task post- compared to pre-disambiguation. However, neither the manipulation nor the the phase \* manipulation interaction were significant.
+
+## Recognition task
+
+### How do our manipulations affect verbal identification during unambiguous image presentation?
+**TL;DR**: verbal identification is impaired for upside down (unambiguous)
+
+```{python}
+# %% recognition - verbal accuracy
+
+verbal_data = data[data['block_type'] != 'dot'].copy()
+grouped_data = verbal_data.groupby(['subject','image_type', 'manipulation', 'phase'],
+                                    as_index=False).verbal_acc_corrected.mean()
+grouped_data = grouped_data.reset_index()
+
+# g = sns.catplot(
+#     data=grouped_data, x="phase", y="verbal_acc_corrected", hue="image_type", col="manipulation",
+#     palette="Set2", kind="point",order=['pre',  'color','post'],
+#     dodge=True
+# )
+
+## How do our manipulations affect verbal id during unambiguous image presentation?
+unambiguous_verbal_data = verbal_data[(verbal_data["image_type"] == 'target')]
+unambiguous_verbal_data = unambiguous_verbal_data[(unambiguous_verbal_data["phase"] == 'color')]
+# combine horizontal_flip and regular into one group (upright)
+unambiguous_verbal_data['manipulation'] = np.where(
+    unambiguous_verbal_data['manipulation'].isin(['horizontal_flip', 'regular']),
+    'upright',
+    unambiguous_verbal_data['manipulation']
+)
+unambiguous_verbal_data = unambiguous_verbal_data.groupby(['subject', 'manipulation'],
+                                    as_index=False).verbal_acc_corrected.mean()
+unambiguous_verbal_data = unambiguous_verbal_data.reset_index()
+g = sns.catplot(
+    data=unambiguous_verbal_data, x="manipulation", y="verbal_acc_corrected",
+    kind="point",
+    dodge=True
+)
+
+# one-sided t-test
+posthoc = pg.pairwise_tests(data=unambiguous_verbal_data,
+                            dv='verbal_acc_corrected',
+                            within='manipulation', subject='subject',
+                            parametric=True, padjust='fdr_bh', alternative = "greater",
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+There is evidence for a significant difference in verbal accuracy during unambgiuous image presentation between the upright and upside down conditions. The upright condition shows a higher verbal accuracy than the upside down condition. This is in line with the idea that the **upright condition allows for better access to the abstract representation of the image, while the upside down condition impairs this access**.
+
+Similarly, semantic disatance is significantly higher in the upside down condition:
+
+
+```{python}
+# %% recognition - verbal accuracy
+
+## How do our manipulations affect verbal id during unambiguous image presentation?
+unambiguous_verbal_data = verbal_data[(verbal_data["image_type"] == 'target')]
+unambiguous_verbal_data = unambiguous_verbal_data[(unambiguous_verbal_data["phase"] == 'color')]
+# combine horizontal_flip and regular into one group (upright)
+unambiguous_verbal_data['manipulation'] = np.where(
+    unambiguous_verbal_data['manipulation'].isin(['horizontal_flip', 'regular']),
+    'upright',
+    unambiguous_verbal_data['manipulation']
+)
+unambiguous_verbal_data = unambiguous_verbal_data.groupby(['subject', 'manipulation'],
+                                    as_index=False).semantic_distance.mean()
+unambiguous_verbal_data = unambiguous_verbal_data.reset_index()
+g = sns.catplot(
+    data=unambiguous_verbal_data, x="manipulation", y="semantic_distance",
+    kind="point",
+    dodge=True
+)
+
+# one-sided t-test
+posthoc = pg.pairwise_tests(data=unambiguous_verbal_data,
+                            dv='semantic_distance',
+                            within='manipulation', subject='subject',
+                            parametric=True, padjust='fdr_bh', alternative = "less",
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+### How do our manipulations affect verbal identification during Mooney image presentation?
+
+**TL;DR**: verbal identification is similar pre-disambiguation for all three conditions, but post-disambiguation, upside down images show lower verbal accuracy.
+
+```{python}
+grouped_data =data[data['block_type'] != 'dot'].copy()
+grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+grouped_data = grouped_data[(grouped_data["phase"] != 'color')]
+
+grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
+                                    as_index=False).verbal_acc_corrected.mean()
+grouped_data = grouped_data.reset_index()
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="verbal_acc_corrected",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True
+)
+aov = pg.rm_anova(data=grouped_data,
+                      dv='verbal_acc_corrected',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=True)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+Posthoc tests:
+```{python}
+posthoc = pg.pairwise_tests(data=grouped_data,
+                            dv='verbal_acc_corrected',
+                            within=['phase', 'manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+Same with semantic distance:
+```{python}
+grouped_data =data[data['block_type'] != 'dot'].copy()
+grouped_data = grouped_data[(grouped_data["image_type"] == 'target')]
+grouped_data = grouped_data[(grouped_data["phase"] != 'color')]
+grouped_data = grouped_data[grouped_data['semantic_distance'].notna()]
+
+grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
+                                    as_index=False).semantic_distance.mean()
+grouped_data = grouped_data.reset_index()
+
+g = sns.catplot(
+    data=grouped_data, x="phase", y="semantic_distance",hue="manipulation",
+    palette="Set2", kind="point",order=['pre', 'post'],
+    dodge=True
+)
+aov = pg.rm_anova(data=grouped_data,
+                      dv='semantic_distance',
+                      within=['phase','manipulation'], subject='subject',
+                      detailed=True)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+Posthoc tests:
+
+```{python}
+posthoc = pg.pairwise_tests(data=grouped_data,
+                            dv='semantic_distance',
+                            within=['phase', 'manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+We can then extract a "learning index", by subtracting the pre from the post phase, and check if there's a difference between conditions:
+```{python}
+data_recog = data[data['block_type'] != 'dot'].copy()
+data_recog = data_recog[data_recog['semantic_distance'].notna()]
+grouped_data = data_recog[data_recog['image_type'] == 'target']
+grouped_data = data_recog[data_recog['phase'] != 'color']
+grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
+                                    as_index=False).semantic_distance.mean()
+
+
+# Pivot so we have one row per subject x manipulation, with pre/post as columns
+pivoted = grouped_data.pivot_table(
+    index=['subject', 'manipulation'],
+    columns='phase',
+    values='semantic_distance'
+).reset_index()
+
+pivoted['learning_index'] = pivoted['pre'] - pivoted['post']
+
+# Convert from wide to long format
+long_df = pd.melt(
+    pivoted,
+    id_vars=['subject', 'manipulation', 'learning_index'],  # keep learning_index with each row
+    value_vars=['post'],
+    var_name='phase',
+    value_name='semantic_distance'
+)
+
+g = sns.catplot(
+    data=long_df, x="manipulation", y="learning_index",
+    palette="Set2", kind="point",errorbar="se",
+    dodge=True
+)
+
+aov = pg.rm_anova(data=long_df,
+                      dv='learning_index',
+                      within='manipulation', subject='subject',
+                      detailed=True)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+posthoc = pg.pairwise_tests(data=long_df,
+                            dv='learning_index',
+                            within='manipulation', subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+Similarly, we can extract a "prior usage index", computed as 1 - (semantic_distance_post - semantic_distance_color), and check if there's a difference between conditions. This index is a measure of how much the semantic distance in the post phase is affected by the semantic distance in the color phase. A higher value indicates that the semantic distance in the post phase is more similar to the semantic distance in the color phase, which suggests that the prior usage is higher.
+
+Results, howver, are not significant:
+
+```{python}
+#%% Prior usage
+grouped_data = data_recog[data_recog['block_type'] != 'dot']
+grouped_data = data_recog[data_recog['image_type'] == 'target']
+grouped_data = data_recog[data_recog['phase'] != 'pre']
+grouped_data = grouped_data.groupby(['subject', 'manipulation', 'phase'],
+                                    as_index=False).semantic_distance.mean()
+pivoted = grouped_data.pivot_table(
+    index=['subject', 'manipulation'],
+    columns='phase',
+    values='semantic_distance'
+).reset_index()
+
+pivoted['prior_usage'] = 1 - (pivoted['post'] - pivoted['color'])
+
+# Convert from wide to long format
+long_df = pd.melt(
+    pivoted,
+    id_vars=['subject', 'manipulation', 'prior_usage'],  # keep learning_index with each row
+    value_vars=['post'],
+    var_name='phase',
+    value_name='semantic_distance'
+)
+
+g = sns.catplot(
+    data=long_df, x="manipulation", y="prior_usage",
+    palette="Set2", kind="point",errorbar="se",
+    dodge=True
+)
+
+aov = pg.rm_anova(data=long_df,
+                      dv='prior_usage',
+                      within='manipulation', subject='subject',
+                      detailed=True)
+aov.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+posthoc = pg.pairwise_tests(data=long_df,
+                            dv='prior_usage',
+                            within=['manipulation'], subject='subject',
+                            parametric=True, padjust='fdr_bh',
+                            effsize='hedges')
+posthoc.style.set_table_attributes('class="table table-striped table-hover"').format(precision=3)
+```
+
+# Conclusions
+
+The results show:
+
+- on the one hand, the dot task is not affecter by either manipulation (we only found a main effect of phase), therefore:
+    - the type of perceptual learning measured by the dot task is not significantly impaired by either changing the low-level perceptual features of the image (horizontal flip) or by changing the abstract representation of the image (upside down)
+- on the other hand, the recognition task shows that:
+    - the upside down manipulation significantly impairs verbal identification and semantic distance, while the horizontal flip does not. This suggests that the upside down manipulation affects the abstract representation of the image, while the horizontal flip does not.
+    - such impairment is reflected in mooney image identification post-disambiguation, but not pre-disambiguation. Mooney images are equally likely to be identified pre-disambiguation, but upside-down disambiguation seem to afford lower "learning" when it comes to semantically identifying the image.
+
+In conclusion, impairing semantic access seem to impact the most striking behavioral indices of one-shot learning (i.e., semantic, conscious access to the identity of the image). However, it seems one-shot perceptual learning can formally take place when assessed through other measures. This happens if semantic access is impaired (upside down images), or perhaps more surprisingly, even if the pixel-to-pixel mapping changes between mooney and unambiguous images (horizontal flip).
