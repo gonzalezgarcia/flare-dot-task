@@ -28,7 +28,7 @@ EXPECTED_COLUMNS = [
     'subject', 'subject_ProlificID', 'designmatrix_ID', 'age', 'gender', 'handedness', 'nationality',
     'trial_number', 'block', 'block_type', 'image_id', 'filename',
     'image_type', 'manipulation', 'phase', 'dot_position',
-    'RawResponse', 'dot_resp', 'dot_acc', 'rt', 'verbal_id'
+    'RawResponse', 'dot_resp', 'dot_acc', 'rt', 'verbal_id', "unamb_image_duration"
 ]
 
 def split_into_chunks(lines):
@@ -50,9 +50,16 @@ def process_chunk(chunk):
             raise ValueError("Too few columns to be a valid participant chunk")
 
         df = pd.DataFrame.from_records(reader, columns=headers)
-
+        
+        df = df[df['unamb_image_duration'] != "300"]
+        df = df[df['unamb_image_duration'] != 300]
+        
+        # reset index
+        df = df.reset_index(drop=True)
+        
+        
         if df.empty:
-            raise ValueError("Empty dataframe")
+            raise ValueError("Empty dataframe") 
         if 'block_type' not in df.columns:
             raise ValueError("Missing 'block_type' column")
 
@@ -61,6 +68,8 @@ def process_chunk(chunk):
         missing = [col for col in EXPECTED_COLUMNS if col not in df.columns]
         if missing:
             return None, f"missing columns: {missing}"
+        
+                
         return df, None
 
     except Exception as e:
@@ -233,15 +242,16 @@ def compute_sd(data):
 ## main function
 def main():
     parser = argparse.ArgumentParser(description="Preprocess a multi-subject JATOS .txt file.")
-    parser.add_argument("--file", type=str, required=True, help="Filename of the raw .txt file (inside data/raw/)")
-    args = parser.parse_args()
-
-    file_path = RAW_DIR / args.file
+    parser.add_argument("--file", type=str, required=False, help="Filename of the raw .txt file (inside data/raw/)")
+    #args = parser.parse_args()
+    
+    file = "jatos_results_20250523095453.txt"
+    file_path = RAW_DIR / file # args.file
     if not file_path.exists():
         logging.error(f"File not found: {file_path}")
         return
 
-    logging.info(f"📄 Processing file: {args.file}")
+    logging.info(f"📄 Processing file: {file}") # args.file
     with open(file_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -260,6 +270,8 @@ def main():
         if df is None:
             skipped_chunks.append((i + 1, reason))
             continue
+        
+        
         # preprocess verbal accuracy and semantic distance
         df = compute_sd(df)
         
