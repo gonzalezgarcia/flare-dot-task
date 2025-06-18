@@ -1,0 +1,427 @@
+---
+title: "Extended analysis on FLARE WP2 Experiment 1"
+format:
+  html:
+    code-fold: true
+editor: visual
+---
+
+## Load data
+
+We keep only the data from participants that finished the experiment (n = 77)
+
+```{r message=FALSE, warning=FALSE}
+# Load necessary libraries
+library(tidyverse)
+library(afex)
+library(kableExtra)
+
+# Define paths
+exp_code <- "exp_3"
+data_dir <- file.path("..", "data", exp_code, "derivatives")
+
+# Load and combine all .csv files with exactly 195 rows
+file_list <- list.files(data_dir, pattern = "\\.(csv)$", full.names = TRUE)
+
+# Read as character (to avoid issues when binding) and keep only those with 195 rows
+dfs <- file_list  %>% 
+  map(~ read_csv(.x, col_types = cols(.default = "c")))  %>% 
+  keep(~ nrow(.) == 195)
+
+data <- bind_rows(dfs) %>% 
+  mutate(
+    subject = as.factor(subject),
+    rt = as.numeric(rt),
+    dot_acc = as.numeric(dot_acc),
+    verbal_acc_corrected = as.numeric(verbal_acc_corrected),
+    semantic_distance = as.numeric(semantic_distance),
+    manipulation = as.factor(manipulation),
+    phase = as.factor(phase),
+    image_type = as.factor(image_type),
+    block_type = as.factor(block_type),
+    phase = fct_relevel(phase, "pre", "post")
+
+  ) %>% 
+  select(subject,rt,dot_acc,verbal_acc_corrected,semantic_distance,manipulation,
+         phase,image_type,block_type,image_id)
+
+
+
+head(data)
+```
+
+## Descriptive plots
+
+```{r}
+data %>%
+  filter(rt > 100, rt < 5000, dot_acc == 1) %>% 
+  ggplot(aes(x = rt, fill = manipulation)) +
+  geom_density(alpha = 0.3) +
+  labs(
+    title = "RT Distribution in the dot task",
+    x = "Reaction Time (ms)",
+    y = "Density"
+  ) +
+  facet_wrap(vars(image_type)) +
+  theme_minimal()
+
+data %>%
+  filter(rt > 100, rt < 5000) %>% 
+  ggplot(aes(x = dot_acc, fill = manipulation)) +
+  geom_density(alpha = 0.5) +
+  labs(
+    title = "Accuracy Distribution in the dot task",
+    x = "accuracy",
+    y = "Density"
+  ) +
+  facet_wrap(vars(image_type)) +
+  theme_minimal()
+
+```
+
+Average number of trials per participant and condition (manipulation x phase x image_type) for the RT analysis:
+
+```{r}
+trial_counts <- data %>%
+  filter(
+    block_type == "dot",
+    dot_acc == 1,
+    rt > 100, rt < 4000
+  ) %>%
+  count(subject, manipulation, phase, image_type, name = "n_trials")
+
+trial_counts <- trial_counts %>%
+  group_by(manipulation, phase, image_type) %>%
+  summarise(
+    mean_trials = mean(n_trials),
+    sd_trials = sd(n_trials),
+    .groups = "drop"
+  ) %>%
+  arrange(manipulation, phase, image_type)
+kbl(trial_counts)
+```
+
+It seems like we are running short of observations for catch trials, so it might be better to omit them. Doing so for now...
+
+## Dot task
+
+### Reaction times
+
+```{r warning=FALSE}
+data_dot_rt <- data %>% 
+  filter(image_type == "target",
+         block_type == "dot",
+        dot_acc == 1,
+        rt > 100, rt < 4000
+         )
+
+plot_data <- data_dot_rt %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_rt = mean(rt), .groups = "drop")
+
+# Plot
+ggplot(plot_data, aes(x = phase, y = mean_rt)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.4, size = 1.5) +  # individual dots
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "line", size = 1.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se,
+               geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "point", size = 3) +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "RT by Phase, Faceted by Manipulation",
+    x = "Phase",
+    y = "Mean RT (ms)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+If we do some stats, there's only a main effect of Phase
+
+```{r message= FALSE}
+
+
+# Summarise mean RT per subject × phase × manipulation
+aov_data <- data_dot_rt %>%
+  filter(rt > 100, rt < 4000) %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_rt = mean(rt), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+anova_rt <- aov_ez(
+  id = "subject",
+  dv = "mean_rt",
+  within = c("phase", "manipulation"),
+  data = aov_data,
+  type = 3,
+  anova_table = list(correction = "GG", es = "pes")
+)
+
+kbl(anova_rt$anova_table, caption = "ANOVA on RTs", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+
+```
+
+Now do it for images that were **recognized** during the disambiguation phase
+
+```{r}
+# Get recognized image trials during the clear (color) phase
+recognized_images <- data %>%
+  filter(
+    block_type != "dot",
+    phase == "color",
+    image_type == "target",
+    semantic_distance < 0.25
+  ) %>%
+  select(subject, manipulation, image = image_id) %>%  
+  distinct()
+
+data_dot_rt_recognized <- data_dot_rt %>%
+  filter(image_type == "target") %>%  # just target images
+  inner_join(recognized_images, by = c("subject", "manipulation", "image_id" = "image"))
+
+plot_data <- data_dot_rt_recognized %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_rt = mean(rt), .groups = "drop")
+
+# Plot
+ggplot(plot_data, aes(x = phase, y = mean_rt)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.4, size = 1.5) +  # individual dots
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "line", size = 1.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se,
+               geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "point", size = 3) +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "RT by Phase, Faceted by Manipulation",
+    x = "Phase",
+    y = "Mean RT (ms)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Summarise mean RT per subject × phase × manipulation
+aov_data <- data_dot_rt_recognized %>%
+  filter(rt > 100, rt < 4000) %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_rt = mean(rt), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+anova_rt <- aov_ez(
+  id = "subject",
+  dv = "mean_rt",
+  within = c("phase", "manipulation"),
+  data = aov_data,
+  type = 3,
+  anova_table = list(correction = "GG", es = "pes")
+)
+
+kbl(anova_rt$anova_table, caption = "ANOVA on RTs", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+```
+
+### Accuracy scores
+
+```{r warning=FALSE}
+data_dot_acc <- data %>% 
+  filter(image_type == "target",
+         block_type == "dot",
+         )
+
+plot_data <- data_dot_acc %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(dot_acc), .groups = "drop")
+
+# Plot
+ggplot(plot_data, aes(x = phase, y = mean_acc)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.4, size = 1.5) +  # individual dots
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "line", size = 1.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se,
+               geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "point", size = 3) +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "Accuracy by Phase, Faceted by Manipulation",
+    x = "Phase",
+    y = "Mean accuracy"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+```
+If we do some stats, there's only a main effect of Phase
+
+```{r message= FALSE}
+
+
+# Summarise mean RT per subject × phase × manipulation
+aov_data <- data_dot_acc %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(dot_acc), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+anova_acc <- aov_ez(
+  id = "subject",
+  dv = "mean_acc",
+  within = c("phase", "manipulation"),
+  data = aov_data,
+  type = 3,
+  anova_table = list(correction = "GG", es = "pes")
+)
+
+kbl(anova_acc$anova_table, caption = "ANOVA on Accuracy", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+
+```
+
+Now do it for images that were **recognized** during the disambiguation phase
+
+```{r}
+# Get recognized image trials during the clear (color) phase
+recognized_images <- data %>%
+  filter(
+    block_type != "dot",
+    phase == "color",
+    image_type == "target",
+    semantic_distance < 0.25
+  ) %>%
+  select(subject, manipulation, image = image_id) %>%  
+  distinct()
+
+data_dot_acc_recognized <- data_dot_acc %>%
+  filter(image_type == "target") %>%  # just target images
+  inner_join(recognized_images, by = c("subject", "manipulation", "image_id" = "image"))
+
+plot_data <- data_dot_acc_recognized %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(dot_acc), .groups = "drop")
+
+# Plot
+ggplot(plot_data, aes(x = phase, y = mean_acc)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.4, size = 1.5) +  # individual dots
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "line", size = 1.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se,
+               geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean,
+               geom = "point", size = 3) +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "Accuracy by Phase, Faceted by Manipulation",
+    x = "Phase",
+    y = "Accuracy"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Summarise mean RT per subject × phase × manipulation
+aov_data <- data_dot_acc_recognized %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(dot_acc), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+anova_rt <- aov_ez(
+  id = "subject",
+  dv = "mean_acc",
+  within = c("phase", "manipulation"),
+  data = aov_data,
+  type = 3,
+  anova_table = list(correction = "GG", es = "pes")
+)
+
+
+kbl(anova_rt$anova_table, caption = "ANOVA on Accuracy", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+```
+
+
+## Naming task
+
+### Verbal accuracy
+```{r}
+data_recog <- data %>%
+  filter(block_type != "dot", image_type == "target", phase != 'color')
+data_recog %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(acc = mean(verbal_acc_corrected, na.rm = TRUE), .groups = "drop") %>%
+  ggplot(aes(x = phase, y = acc)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.3) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean, geom = "point", size = 3) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se, geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean, geom = "line") +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "Verbal Identification Accuracy by Phase",
+    y = "Accuracy (Proportion Correct)",
+    x = "Phase"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+
+aov_data <- data_recog %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(verbal_acc_corrected), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+library(rstatix)
+res.aov <- anova_test(                                 
+  data = aov_data,                                 
+  dv = mean_acc,                                             
+  wid = subject,                                       
+  within = c(phase, manipulation),
+  effect.size = "pes")
+
+
+kbl(res.aov$ANOVA, caption = "ANOVA on naming verbal accuracy", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+
+```
+
+### Semantic distance
+```{r}
+data_recog <- data %>%
+  filter(block_type != "dot", image_type == "target", phase != 'color')
+data_recog %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(acc = mean(semantic_distance, na.rm = TRUE), .groups = "drop") %>%
+  ggplot(aes(x = phase, y = acc)) +
+  geom_jitter(aes(color = manipulation), width = 0.1, alpha = 0.3) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean, geom = "point", size = 3) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun.data = mean_se, geom = "errorbar", width = 0.2) +
+  stat_summary(aes(group = manipulation, color = manipulation), fun = mean, geom = "line") +
+  facet_wrap(~ manipulation) +
+  labs(
+    title = "Semantic distance by Phase",
+    y = "Semantic distance",
+    x = "Phase"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+
+aov_data <- data_recog %>%
+  group_by(subject, phase, manipulation) %>%
+  summarise(mean_acc = mean(semantic_distance, na.rm = TRUE), .groups = "drop") %>%
+  mutate(phase = factor(phase, levels = c("pre", "post")))
+
+res.aov <- anova_test(                                 
+  data = aov_data,                                 
+  dv = mean_acc,                                             
+  wid = subject,                                       
+  within = c(phase, manipulation),
+  effect.size = "pes")
+
+
+kbl(res.aov$ANOVA, caption = "ANOVA on naming semantic_distance", booktabs = T, escape = F, digits = 3) %>%
+  kable_classic(full_width = F, html_font = "Cambria") 
+
+```
